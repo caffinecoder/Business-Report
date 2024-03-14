@@ -1,10 +1,13 @@
-import React from 'react'
-
+import React from "react";
+import { Table } from "@mui/joy";
+import { ConsolidatedBalData } from "./TableData";
 const ConsolidateBalance = () => {
   return (
-    <div className="rounded-lg overflow-hidden border border-gray-300 mt-5">
+    <div className=" overflow-hidden border  mt-5">
       <div className="bg-[#1a3d73] py-2 px-2">
-        <h2 className="text-lg font-semibold uppercase">KEY RATIOS</h2>
+        <h2 className="text-lg font-semibold uppercase">
+          Consolidated Balance Sheet
+        </h2>
       </div>
       <Table
         borderAxis="both"
@@ -17,14 +20,50 @@ const ConsolidateBalance = () => {
       >
         <thead>
           <tr>
-            <th>For the Year Ending</th>
-            <th>31-Mar-2023</th>
-            <th>31-Mar-2022</th>
-            <th>31-Mar-2021</th>
+            <th
+              style={{
+                color: "#000",
+                fontWeight: "600",
+                fontSize: "1rem",
+                backgroundColor: "#eee",
+              }}
+            >
+              For the Year Ending
+            </th>
+            <th
+              style={{
+                color: "#000",
+                fontWeight: "600",
+                fontSize: "1rem",
+                backgroundColor: "#eee",
+              }}
+            >
+              31-Mar-2023
+            </th>
+            <th
+              style={{
+                color: "#000",
+                fontWeight: "600",
+                fontSize: "1rem",
+                backgroundColor: "#eee",
+              }}
+            >
+              31-Mar-2022
+            </th>
+            <th
+              style={{
+                color: "#000",
+                fontWeight: "600",
+                fontSize: "1rem",
+                backgroundColor: "#eee",
+              }}
+            >
+              31-Mar-2021
+            </th>
           </tr>
         </thead>
         <tbody>
-          {KeyRatioData.map((item, idx) => (
+          {ConsolidatedBalData.map((item, idx) => (
             <tr key={idx}>
               <td
                 style={{
@@ -68,7 +107,7 @@ const ConsolidateBalance = () => {
         </tbody>
       </Table>
     </div>
-  )
-}
+  );
+};
 
-export default ConsolidateBalance
+export default ConsolidateBalance;

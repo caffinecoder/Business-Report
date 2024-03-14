@@ -3,7 +3,7 @@ import Table from "@mui/joy/Table";
 import { ProfitLossData } from "./TableData";
 const ProfitLoss = () => {
   return (
-    <div className="rounded-lg overflow-hidden border border-gray-300 mt-5">
+    <div className=" overflow-hidden border  mt-5">
       <div className="bg-[#1a3d73] py-2 px-2">
         <h2 className="text-lg font-semibold uppercase">Profit & Loss A/C</h2>
       </div>

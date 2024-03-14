@@ -6,7 +6,7 @@ const Report = () => {
       <div className="fixed top-0 w-full px-2 bg-white text-center z-50">
         <header className="header">
           <div className="container">
-            <div className="flex items-center justify-between border-b border-black pt-8 pb-3">
+            <div className="flex items-center justify-between border-b border-black pb-3">
               <div className="max-w-[180px] w-full">
                 <img
                   className="w-full"
@@ -21,8 +21,8 @@ const Report = () => {
           </div>
         </header>
       </div>
-      <div className="container py-5 border-b border-gray-900 pt-28">
-        <h2 className="text-center text-2xl font-bold pt-2">
+      <div className="container py-6 border-b border-gray-900 pt-20">
+        <h2 className="text-center text-2xl font-bold pt-2 text-black">
           TABLE OF CONTENT
         </h2>
       </div>

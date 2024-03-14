@@ -469,3 +469,71 @@ export const KeyRatioData = [
   KeyRatio("Fixed Asset/ Net Worth", "0.00", "0.00 ", "90,700.00"),
   KeyRatio("Interest Coverage Ratio", "0.00", "0.00 ", "90,700.00"),
 ];
+const EfficiecyRatio = (label, year2023, year2022, year2021) => {
+  return { label, year2023, year2022, year2021 };
+};
+export const EfficiecyRatioData = [
+  EfficiecyRatio("Average Collection Days", "63.97", "63.97 ", "63.97"),
+  EfficiecyRatio("Account Receiv. Turnover", "63.97", "63.97 ", "63.97"),
+  EfficiecyRatio("Average Payment Days", "63.97", "63.97 ", "63.97"),
+  EfficiecyRatio("Inventory Turnover", "63.97", "63.97 ", "63.97"),
+  EfficiecyRatio("Asset Turnover", "63.97", "63.97 ", "63.97"),
+];
+const ProfitabilityRatio = (label, year2023, year2022, year2021) => {
+  return { label, year2023, year2022, year2021 };
+};
+export const ProfitabilityRatioData = [
+  ProfitabilityRatio("Operating Profit Margin", "63.97", "63.97 ", "63.97"),
+  ProfitabilityRatio("Net Profit Margin", "63.97", "63.97 ", "63.97"),
+  ProfitabilityRatio("Return on Total Assets", "63.97", "63.97 ", "63.97"),
+  ProfitabilityRatio("Return On Equity", "63.97", "63.97 ", "63.97"),
+];
+
+const ConsolidatedBalSheet = (label, year2023, year2022, year2021) => {
+  return { label, year2023, year2022, year2021 };
+};
+export const ConsolidatedBalData = [
+  ConsolidatedBalSheet("Period", "3343900.00", "3343900.00", "3343900.00"),
+  ConsolidatedBalSheet("Type Of Financial", "3343900.00", "3343900.00", "3343900.00"),
+  ConsolidatedBalSheet("Account Type", "3343900.00", "3343900.00", "3343900.00"),
+  ConsolidatedBalSheet("Source", "3343900.00", "3343900.00", "3343900.00"),
+  ConsolidatedBalSheet("Shareholders' Funds", "3343900.00", "3343900.00", "3343900.00"),
+  ConsolidatedBalSheet("Share Capital", "3343900.00", "3343900.00", "3343900.00"),
+  ConsolidatedBalSheet("Other Equity", "3343900.00", "3343900.00", "3343900.00"),
+  ConsolidatedBalSheet("Non-controlling interest", "3343900.00", "3343900.00", "3343900.00"),
+  ConsolidatedBalSheet("Non-current liabilities", "3343900.00", "3343900.00", "3343900.00"),
+  ConsolidatedBalSheet("Other Financial Liabilities", "3343900.00", "3343900.00", "3343900.00"),
+  ConsolidatedBalSheet("Long-term provisions", "3343900.00", "3343900.00", "3343900.00"),
+  ConsolidatedBalSheet("PeriOther Long term liabilitiesod", "3343900.00", "3343900.00", "3343900.00"),
+  ConsolidatedBalSheet("Current liabilities", "3343900.00", "3343900.00", "3343900.00"),
+  ConsolidatedBalSheet("Trade payables", "3343900.00", "3343900.00", "3343900.00"),
+  ConsolidatedBalSheet("Other Financial Liabilities", "3343900.00", "3343900.00", "3343900.00"),
+  ConsolidatedBalSheet("Other current liabilities", "3343900.00", "3343900.00", "3343900.00"),
+  ConsolidatedBalSheet("Short-term provisions", "3343900.00", "3343900.00", "3343900.00"),
+  ConsolidatedBalSheet("Current Tax Liabilities (Net)", "3343900.00", "3343900.00", "3343900.00"),
+  ConsolidatedBalSheet("TOTAL", "3343900.00", "3343900.00", "3343900.00"),
+  ConsolidatedBalSheet("Period", "3343900.00", "3343900.00", "3343900.00"),
+  ConsolidatedBalSheet("Period", "3343900.00", "3343900.00", "3343900.00"),
+  ConsolidatedBalSheet("Period", "3343900.00", "3343900.00", "3343900.00"),
+  ConsolidatedBalSheet("Period", "3343900.00", "3343900.00", "3343900.00"),
+  ConsolidatedBalSheet("Period", "3343900.00", "3343900.00", "3343900.00"),
+  ConsolidatedBalSheet("Period", "3343900.00", "3343900.00", "3343900.00"),
+  ConsolidatedBalSheet("Period", "3343900.00", "3343900.00", "3343900.00"),
+  ConsolidatedBalSheet("Period", "3343900.00", "3343900.00", "3343900.00"),
+  ConsolidatedBalSheet("Period", "3343900.00", "3343900.00", "3343900.00"),
+  ConsolidatedBalSheet("Period", "3343900.00", "3343900.00", "3343900.00"),
+  ConsolidatedBalSheet("Period", "3343900.00", "3343900.00", "3343900.00"),
+  ConsolidatedBalSheet("Period", "3343900.00", "3343900.00", "3343900.00"),
+  ConsolidatedBalSheet("Period", "3343900.00", "3343900.00", "3343900.00"),
+  ConsolidatedBalSheet("Period", "3343900.00", "3343900.00", "3343900.00"),
+  ConsolidatedBalSheet("Period", "3343900.00", "3343900.00", "3343900.00"),
+  ConsolidatedBalSheet("Period", "3343900.00", "3343900.00", "3343900.00"),
+  ConsolidatedBalSheet("Period", "3343900.00", "3343900.00", "3343900.00"),
+  ConsolidatedBalSheet("Period", "3343900.00", "3343900.00", "3343900.00"),
+  ConsolidatedBalSheet("Period", "3343900.00", "3343900.00", "3343900.00"),
+  ConsolidatedBalSheet("Period", "3343900.00", "3343900.00", "3343900.00"),
+  ConsolidatedBalSheet("Period", "3343900.00", "3343900.00", "3343900.00"),
+  ConsolidatedBalSheet("Period", "3343900.00", "3343900.00", "3343900.00"),
+  ConsolidatedBalSheet("Period", "3343900.00", "3343900.00", "3343900.00"),
+  ConsolidatedBalSheet("Period", "3343900.00", "3343900.00", "3343900.00"),
+];

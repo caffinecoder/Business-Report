@@ -1,0 +1,2686 @@
+{
+    "orderResult": {
+      "orderID": "522857",
+      "orderDate": "3/14/2024 4:32:28 PM",
+      "UCS": {
+        "Auditors": {
+          "Auditor": {
+            "AuditorName": "A John Moris & Co",
+            "auditorDesignation": "Chartered Accountants",
+            "auditorOtherDetails": "Bangalore, Karnataka, India",
+            "ContactNo": "",
+            "FaxNo": "",
+            "EMail": "",
+            "WebSite": "",
+            "FRNo": "007220S",
+            "MembershipNo": "021183",
+            "UdinNo": "23021183BGTCQC1773"
+          }
+        },
+        "authorizedCapitals": {
+          "authorizedCapital": {
+            "@value": "6 000 000 000",
+            "EquityShares": "",
+            "PrefenceShares": "",
+            "Currency": "INR"
+          },
+          "CapitalEmployed": {
+            "@value": "3 343 875 000",
+            "@ValueType": "",
+            "EquityShares": "",
+            "PrefenceShares": "",
+            "Currency": "INR"
+          }
+        },
+        "Banking": {
+          "@Relation": ""
+        },
+        "Bankers": {
+          "Banker": [
+            {
+              "BankType": "",
+              "BankName": "State Bank of India",
+              "Address": "Industrial Finance Branch, Residency Plaza, Residency Road, Bangalore - 560025, Karnataka, India",
+              "Limit": ""
+            },
+            {
+              "BankType": "",
+              "BankName": "Bank of Baroda",
+              "Address": "",
+              "Limit": ""
+            },
+            {
+              "BankType": "",
+              "BankName": "Export Import Bank of Ind",
+              "Address": "",
+              "Limit": ""
+            },
+            {
+              "BankType": "",
+              "BankName": "Indian Bank",
+              "Address": "",
+              "Limit": ""
+            },
+            {
+              "BankType": "",
+              "BankName": "Indian Overseas Bank",
+              "Address": "",
+              "Limit": ""
+            },
+            {
+              "BankType": "",
+              "BankName": "Punjab National Bank",
+              "Address": "",
+              "Limit": ""
+            },
+            {
+              "BankType": "",
+              "BankName": "Canara bank",
+              "Address": "",
+              "Limit": ""
+            },
+            {
+              "BankType": "",
+              "BankName": "Union Bank of India",
+              "Address": "",
+              "Limit": ""
+            }
+          ]
+        },
+        "HypothecationDetails": {
+          "Hypothecation": {
+            "ChargeHolder": "State Bank Of India",
+            "HypothecationOf": "",
+            "DateOfAgreement": "28-Aug-2007",
+            "Amount": "500 000 000",
+            "ChargeID": "10070823",
+            "ChargeStatus": "",
+            "DateOfModification": "11-Oct-2021"
+          },
+          "Comment": ""
+        },
+        "BrandNames": {
+          "brandName": ""
+        },
+        "BusinessAddress": {
+          "Address": "15/1, Cubbon Road,Post Box No.5150 Bangalore",
+          "City": "Bangalore",
+          "PinCode": "560001",
+          "State": "Karnataka",
+          "Country": "India",
+          "IsoCountry": "IN",
+          "Phone": "+91 8022866001 / 22320701",
+          "Fax": "91 / 80 / 22867533  22868758  22320758",
+          "Email": "cosec@hal-india.co.in , marketing@hal-india.com , root@bnghal.kar.nic.in , cosec@hal-india.com; cosec@hal-india.co.in",
+          "Website": "www.hal-india.co.in",
+          "Location": "",
+          "Status": "",
+          "Area": "",
+          "AddressComment": ""
+        },
+        "CompanyStatus": "Active",
+        "CapitalHistories": {
+          "authorizedCapital": {
+            "@value": "6 000 000 000",
+            "EquityShares": "",
+            "PrefenceShares": "",
+            "Currency": "INR"
+          },
+          "CapitalEmployed": {
+            "@value": "3 343 875 000",
+            "EquityShares": "",
+            "PrefenceShares": "",
+            "Currency": "INR"
+          }
+        },
+        "ChiefExecutive": {
+          "KeyExecutive": [
+            {
+              "ExecutiveName": "Ananthakrishnan Chinakavanam Bhoopathi",
+              "Designation": "CFO",
+              "DOB": "",
+              "DOj": "01-Aug-2018",
+              "Address": "",
+              "Mobile": "",
+              "Qualification": "",
+              "Experience": ""
+            },
+            {
+              "ExecutiveName": "Shailesh Bansal",
+              "Designation": "Company Secretary",
+              "DOB": "",
+              "DOj": "28-Mar-2023",
+              "Address": "",
+              "Mobile": "",
+              "Qualification": "",
+              "Experience": ""
+            }
+          ]
+        },
+        "Clienttele": "",
+        "companyBusinessRegNo": {
+          "InocrporationNo": "L35301KA1963GOI001622",
+          "PAN": "AAACH3641R",
+          "TINNo": "",
+          "TANNo": "",
+          "IECNo": "",
+          "GSTIN": "29AAACH3641R1Z3",
+          "ACNNo": "",
+          "ABNNo": ""
+        },
+        "CompanyName": {
+          "Name": "Hindustan Aeronautics Limited",
+          "Comment": "",
+          "AlsoKnownAs": ""
+        },
+        "companyRegistrationDate": "16-Aug-1963",
+        "CompanyTrades": {
+          "Trade": [
+            {
+              "MainTrade": "Import details",
+              "SubTrade": "Countries",
+              "Value": "UK, USA, France, Russia, Canada"
+            },
+            {
+              "MainTrade": "Export details",
+              "SubTrade": "Countries",
+              "Value": "UK, Mauritius, Brazil"
+            },
+            {
+              "MainTrade": "References",
+              "SubTrade": "Buyers",
+              "Value": "Cosmic Air, Nepal \nGorkha Airlines, Nepal  \nRoyal Nepal Army, Nepal \nIsland Aviation Services, Maldives \nRoyal Malaysian Air Force, Malaysia \nRoyal Thai Air Force, Thailand \nVietnam Air Force, Vietnam \nCorporate Air, Philippines \nMistubishi Heavy Industries, Japan \nCoast Guard, Mauritius \nNamibian Air Force, Namibia \nPeruvian Air Force , Peru  \nELTA, Israel \nIsrael Aircraft Industries, Israel  \nRoyal Air Force, Oman \nTransworld Aviation, UAE \nAirbus Industries, France \nDassault Aviation, France \nEADS, France \nSnecma, France \nAPPH Bolton, UK \nBAE Systems, UK \nChelton, UK \nDowty Aerospace Hydraulics, UK \nHampson, UK \nMessier Dowty Ltd., UK \nRolls Royce Plc, UK \nSmiths Industries, UK \nStrongfield Technologies, UK \nThe Boeing Aircraft Company, USA \nHoneywell International, USA \nMOOG, USA  \nIndian Army \nIndian Airforce \nIndian Navy \nIndian Coast Guard \nBorder Security Force \nDefence Research & Development Organisation \nIndian Space Research Organisation \nIndian Airlines \nAir India \nAirports Authority of India \nJet Airways \nAir Sahara \nBharat Electronics \nOrdnance Factories \nOil & Natural Gas Corporation Ltd. \nCoal India \nKudremukh Iron ore Company ltd. \nNALCO \nReliance Industries \nUnited Breweries \nGovt. of Karnataka \nGovt. of Andhra Pradesh \nGovt. of Maharashtra \nGovt. of Rajastan \nGovt. of West Bengal \nGovt. of Jammu & Kashmir \nGovt. of Uttar Pradesh"
+            },
+            {
+              "MainTrade": "Purchases",
+              "SubTrade": "Payment Terms",
+              "Value": "Letter of Credit for 60 Days"
+            },
+            {
+              "MainTrade": "Sales",
+              "SubTrade": "Payment Terms",
+              "Value": "Letter of Credit"
+            }
+          ]
+        },
+        "SicDetails": {
+          "SicCodes": [
+            {
+              "SicCode": "3530",
+              "SicDescription": "Manufacture Of Aircraft And Spacecraft",
+              "MainActivity": "N"
+            },
+            {
+              "SicCode": "7522",
+              "SicDescription": "Defence Activities",
+              "MainActivity": "Y"
+            }
+          ]
+        },
+        "NACEDetails": {
+          "NACECodes": [
+            {
+              "NACECode": "2811",
+              "NACEDescription": "Manufacture Of Engines And Turbines, Except Aircraft, Vehicle And Cycle Engines",
+              "MainActivity": "N"
+            },
+            {
+              "NACECode": "8422",
+              "NACEDescription": "Defence Activities",
+              "MainActivity": "Y"
+            }
+          ]
+        },
+        "NegativeSearch": {
+          "NegativeInfo": [
+            {
+              "NegMatch": "No",
+              "Head": "Debt collection",
+              "Value": "An overseas supplier has reported a small non-payment from the subject company."
+            },
+            {
+              "NegMatch": "No",
+              "Head": "Indian Regulatory Authorities (IRA) Checks",
+              "Value": ""
+            },
+            {
+              "NegMatch": "No",
+              "Head": "- Debt Recovery Tribunals",
+              "Value": "None Reported"
+            },
+            {
+              "NegMatch": "No",
+              "Head": "- SEBI",
+              "Value": "None Reported"
+            },
+            {
+              "NegMatch": "No",
+              "Head": "- RBI",
+              "Value": "None Reported"
+            },
+            {
+              "NegMatch": "No",
+              "Head": "Corruption, Money Laundering & Terrorism (CMT)",
+              "Value": "None Reported"
+            },
+            {
+              "NegMatch": "No",
+              "Head": "CBI",
+              "Value": "None Reported"
+            },
+            {
+              "NegMatch": "No",
+              "Head": "Defaulters  List",
+              "Value": "No derogatory information found in CIBIL database for the last six quarters. \n \n* The Defaulter List of various banks, all India notified Financial Institutions (FIs) and State Financial Corporations (SFCs) as published by CIBIL website pursuant to the directions of the Reserve Bank of India"
+            },
+            {
+              "NegMatch": "No",
+              "Head": "BSE",
+              "Value": "Regulatory Charges \n \nDid Not Submit Corporate Governance Report U/S 17(1) Of Sebi (Lodr) Regulations,2015 For The Quarter Ended 30-Jun-2023 \n \nRegulatory Action(S) / Date Of Order\t \nIMPOSED FINE RS.536900 \n \n30-JUN-2023"
+            },
+            {
+              "NegMatch": "No",
+              "Head": "IBBI",
+              "Value": "No Match Found"
+            }
+          ]
+        },
+        "creditRecommendation": {
+          "CreditRating": "A+",
+          "CreditLimit": "USD 62452000 / INR 5174160000",
+          "CreditScore": "84",
+          "CreditRisk": "Business dealings permissible with low risk of default."
+        },
+        "CreditRatingExplanation": {
+          "Rating": [
+            "A",
+            "A+",
+            "B",
+            "C",
+            "D",
+            "NR"
+          ],
+          "Explanation": [
+            "The credit appraisal provides an assessment of the creditworthiness of a company. It takes into account significant elements of credit including history, business performance, management, background, financial  position, payment history, overall market conditions, market trends and the reputation of the company",
+            "NR is stated where there is insufficient information to facilitate rating. However, it is not to be construed as unfavorable."
+          ]
+        },
+        "Disclaimer": "This report is based on information from sources believed to be true. Any advice or recommendation in this report has been given without specific investment objectives and the particular needs of any specific addressee. It must be distinctly understood that though utmost care has been exercised to obtain reports of a reliable character but we accept no liability whatsoever for any direct or consequential loss arising from any use of this document. \n",
+        "Directors": {
+          "@value": "",
+          "Director": [
+            {
+              "Name": "Deepak Abasaheb Shinde",
+              "Designation": "Director",
+              "DOB": "",
+              "DOJ": "28-Apr-2022",
+              "Address": "",
+              "Qualification": "",
+              "Experience": "",
+              "DIN": "00288460",
+              "Nationality": "",
+              "BirthPlace": "",
+              "LanguageKnown": "",
+              "NationalityID": "",
+              "Mobile": "",
+              "EMail": "",
+              "Gender": "",
+              "OtherDirectorShips": ""
+            },
+            {
+              "Name": "Ejipura Puthrappa Jayadeva",
+              "Designation": "Whole Time Director",
+              "DOB": "",
+              "DOJ": "10-Jun-2022",
+              "Address": "",
+              "Qualification": "",
+              "Experience": "",
+              "DIN": "06761333",
+              "Nationality": "",
+              "BirthPlace": "",
+              "LanguageKnown": "",
+              "NationalityID": "",
+              "Mobile": "",
+              "EMail": "",
+              "Gender": "",
+              "OtherDirectorShips": ""
+            },
+            {
+              "Name": "Ananthakrishnan Chinakavanam Bhoopathi",
+              "Designation": "Whole Time Director",
+              "DOB": "",
+              "DOJ": "01-Aug-2018",
+              "Address": "",
+              "Qualification": "",
+              "Experience": "",
+              "DIN": "06761339",
+              "Nationality": "",
+              "BirthPlace": "",
+              "LanguageKnown": "",
+              "NationalityID": "",
+              "Mobile": "",
+              "EMail": "",
+              "Gender": "",
+              "OtherDirectorShips": ""
+            },
+            {
+              "Name": "Divya Gupta",
+              "Designation": "Director",
+              "DOB": "",
+              "DOJ": "28-Dec-2021",
+              "Address": "",
+              "Qualification": "",
+              "Experience": "",
+              "DIN": "00236773",
+              "Nationality": "",
+              "BirthPlace": "",
+              "LanguageKnown": "",
+              "NationalityID": "",
+              "Mobile": "",
+              "EMail": "",
+              "Gender": "",
+              "OtherDirectorShips": ""
+            },
+            {
+              "Name": "Sunil Krishna Murthy Devanahalli",
+              "Designation": "Whole Time Director",
+              "DOB": "",
+              "DOJ": "29-Sep-2022",
+              "Address": "",
+              "Qualification": "",
+              "Experience": "",
+              "DIN": "09639264",
+              "Nationality": "",
+              "BirthPlace": "",
+              "LanguageKnown": "",
+              "NationalityID": "",
+              "Mobile": "",
+              "EMail": "",
+              "Gender": "",
+              "OtherDirectorShips": ""
+            },
+            {
+              "Name": "Thiruvenkadam Natarajan",
+              "Designation": "Nominee Director",
+              "DOB": "",
+              "DOJ": "23-Dec-2022",
+              "Address": "",
+              "Qualification": "",
+              "Experience": "",
+              "DIN": "00396367",
+              "Nationality": "",
+              "BirthPlace": "",
+              "LanguageKnown": "",
+              "NationalityID": "",
+              "Mobile": "",
+              "EMail": "",
+              "Gender": "",
+              "OtherDirectorShips": ""
+            },
+            {
+              "Name": "Atasi Baran Pradhan",
+              "Designation": "Whole Time Director",
+              "DOB": "",
+              "DOJ": "19-Jul-2023",
+              "Address": "",
+              "Qualification": "",
+              "Experience": "",
+              "DIN": "10124018",
+              "Nationality": "",
+              "BirthPlace": "",
+              "LanguageKnown": "",
+              "NationalityID": "",
+              "Mobile": "",
+              "EMail": "",
+              "Gender": "",
+              "OtherDirectorShips": ""
+            },
+            {
+              "Name": "Muzaffaruddin Siddique Zakiruddin Siddique",
+              "Designation": "Nominee Director",
+              "DOB": "",
+              "DOJ": "18-Jul-2023",
+              "Address": "",
+              "Qualification": "",
+              "Experience": "",
+              "DIN": "10231161",
+              "Nationality": "",
+              "BirthPlace": "",
+              "LanguageKnown": "",
+              "NationalityID": "",
+              "Mobile": "",
+              "EMail": "",
+              "Gender": "",
+              "OtherDirectorShips": ""
+            }
+          ]
+        },
+        "earningBeforeIncomeTax": {
+          "currency": "",
+          "Earning": ""
+        },
+        "establishedDate": "16-Aug-1963",
+        "FormerNames": "",
+        "InustrialTrend": {
+          "IndustryName": "",
+          "IndustryTrend": ""
+        },
+        "EconomicOutlook": {
+          "Head": "",
+          "Explanation": ""
+        },
+        "LegalActions": {
+          "Litigation": "Yes",
+          "LitigationComments": "During the course of our litigation searches we have found reported judgments involving the subject. The details of the same can be provided upon request.",
+          "Annexure1": ""
+        },
+        "LegalForm": "Public Limited Company",
+        "Locations": {
+          "Location": [
+            {
+              "@Type": "Plant",
+              "Address": "Chakeri, P. B.No. 225",
+              "City": "Kanpur",
+              "PinCode": "208008",
+              "State": "Uttar Pradesh",
+              "Country": "India",
+              "IsoCountry": "IN",
+              "Phone": "+ 91 512 2402774",
+              "Fax": "",
+              "Location": "",
+              "Status": "",
+              "EMail": "",
+              "WebSite": "",
+              "Area": ""
+            },
+            {
+              "@Type": "Plant",
+              "Address": "No. 101, Aurbindo Place, Hauz Khas",
+              "City": "New Delhi",
+              "PinCode": "110016",
+              "State": "Delhi",
+              "Country": "India",
+              "IsoCountry": "IN",
+              "Phone": "+ 91 11 2651 4604",
+              "Fax": "+ 91 11 2686 4683",
+              "Location": "",
+              "Status": "",
+              "EMail": "",
+              "WebSite": "",
+              "Area": ""
+            },
+            {
+              "@Type": "Plant",
+              "Address": "New Kamani Chambers, 32, Ramjibhai Kamani Marg, Ballard Estate",
+              "City": "Mumbai",
+              "PinCode": "400018",
+              "State": "Maharashtra",
+              "Country": "India",
+              "IsoCountry": "IN",
+              "Phone": "+ 91 22 2261 0329 / 2261 6276",
+              "Fax": "+ 91 22 2266 4890",
+              "Location": "",
+              "Status": "",
+              "EMail": "",
+              "WebSite": "",
+              "Area": ""
+            },
+            {
+              "@Type": "Plant",
+              "Address": "No. 9, SAIT Colony, 2nd Street, Ground Floor, Egmore",
+              "City": "Chennai",
+              "PinCode": "600008",
+              "State": "Tamil Nadu",
+              "Country": "India",
+              "IsoCountry": "IN",
+              "Phone": "+ 91 44 2822 4982",
+              "Fax": "",
+              "Location": "",
+              "Status": "",
+              "EMail": "",
+              "WebSite": "",
+              "Area": ""
+            },
+            {
+              "@Type": "Plant",
+              "Address": "HAL Bhavan, D. No. 49-22-4, Near Shankar Matham, Lalitanagar",
+              "City": "Visakhapatnam",
+              "PinCode": "530016",
+              "State": "Andhra Pradesh",
+              "Country": "India",
+              "IsoCountry": "IN",
+              "Phone": "+ 91 891 255 4376",
+              "Fax": "",
+              "Location": "",
+              "Status": "",
+              "EMail": "",
+              "WebSite": "",
+              "Area": ""
+            },
+            {
+              "@Type": "Unit",
+              "Address": "P.O. Hal Barabanki Road",
+              "City": "Lucknow",
+              "PinCode": "226016",
+              "State": "Uttar Pradesh",
+              "Country": "India",
+              "IsoCountry": "IN",
+              "Phone": "+ 91 522 2340351 / 52, 2350996 / 97 / 98",
+              "Fax": "+ 91 522 234 0335 / 234 0338",
+              "Location": "",
+              "Status": "",
+              "EMail": "",
+              "WebSite": "",
+              "Area": ""
+            },
+            {
+              "@Type": "Branch",
+              "Address": "Bangalore Complex,P.B. No. 9310, C.V. Raman Nagar (P.O.), Old Madras Road",
+              "City": "Bangalore",
+              "PinCode": "560093",
+              "State": "Karnataka",
+              "Country": "India",
+              "IsoCountry": "IN",
+              "Phone": "",
+              "Fax": "",
+              "Location": "",
+              "Status": "",
+              "EMail": "",
+              "WebSite": "",
+              "Area": ""
+            },
+            {
+              "@Type": "Unit",
+              "Address": "Aircraft Division, Ojhar Township Post Office",
+              "City": "Nashik",
+              "PinCode": "422207",
+              "State": "Maharashtra",
+              "Country": "India",
+              "IsoCountry": "IN",
+              "Phone": "",
+              "Fax": "",
+              "Location": "",
+              "Status": "",
+              "EMail": "",
+              "WebSite": "",
+              "Area": ""
+            },
+            {
+              "@Type": "Other Address",
+              "Address": "PO Box 1790, Design Complex",
+              "City": "Bangalore",
+              "PinCode": "560017",
+              "State": "Karnataka",
+              "Country": "India",
+              "IsoCountry": "IN",
+              "Phone": "",
+              "Fax": "",
+              "Location": "",
+              "Status": "",
+              "EMail": "",
+              "WebSite": "",
+              "Area": ""
+            },
+            {
+              "@Type": "Other Address",
+              "Address": "Koraput, P.O. Sunabeda",
+              "City": "Koraput",
+              "PinCode": "763002",
+              "State": "Orissa",
+              "Country": "India",
+              "IsoCountry": "IN",
+              "Phone": "",
+              "Fax": "",
+              "Location": "",
+              "Status": "",
+              "EMail": "",
+              "WebSite": "",
+              "Area": ""
+            },
+            {
+              "@Type": "Other Address",
+              "Address": "Aircraft Div Post Bag No 1788 Bangalore Complex,Bangalore",
+              "City": "Banglaore",
+              "PinCode": "560017",
+              "State": "Karnataka",
+              "Country": "India",
+              "IsoCountry": "IN",
+              "Phone": "",
+              "Fax": "",
+              "Location": "",
+              "Status": "",
+              "EMail": "",
+              "WebSite": "",
+              "Area": ""
+            },
+            {
+              "@Type": "Other Address",
+              "Address": "Bangalore Complex, Vimaanapura Post",
+              "City": "Bangalore",
+              "PinCode": "560017",
+              "State": "Karnataka",
+              "Country": "India",
+              "IsoCountry": "IN",
+              "Phone": "",
+              "Fax": "",
+              "Location": "",
+              "Status": "",
+              "EMail": "",
+              "WebSite": "",
+              "Area": ""
+            },
+            {
+              "@Type": "Other Address",
+              "Address": "Hal Post",
+              "City": "Hyderabad",
+              "PinCode": "500042",
+              "State": "Andhra Pradesh",
+              "Country": "India",
+              "IsoCountry": "IN",
+              "Phone": "+ 91 40 23878432",
+              "Fax": "+ 91 40 23878389",
+              "Location": "",
+              "Status": "",
+              "EMail": "",
+              "WebSite": "",
+              "Area": ""
+            },
+            {
+              "@Type": "Other Address",
+              "Address": "Bangalore Complex, Post Bag No 1791",
+              "City": "Bengaluru",
+              "PinCode": "560017",
+              "State": "Karnataka",
+              "Country": "India",
+              "IsoCountry": "IN",
+              "Phone": "",
+              "Fax": "",
+              "Location": "",
+              "Status": "",
+              "EMail": "",
+              "WebSite": "",
+              "Area": ""
+            },
+            {
+              "@Type": "Representative Office",
+              "Address": "Hal Bhavan, Building No. 44, Nehru Nagar, Opp. C.S. Ground, Kurla (East)",
+              "City": "Mumbai",
+              "PinCode": "4000024",
+              "State": "Maharashtra",
+              "Country": "India",
+              "IsoCountry": "IN",
+              "Phone": "",
+              "Fax": "",
+              "Location": "",
+              "Status": "",
+              "EMail": "",
+              "WebSite": "",
+              "Area": ""
+            }
+          ]
+        },
+        "PreviousAddresses": {
+          "PreviousAddress": {
+            "Address": "",
+            "DateOfChange": "",
+            "Comments": ""
+          }
+        },
+        "MajorAffiliates": "",
+        "LinkedCompanies": {
+          "LinkedCompany": [
+            {
+              "RelationType": "subsidiary",
+              "Name": "Naini Aerospace Limited",
+              "Address": "",
+              "TurnOver": "",
+              "Profit": "",
+              "Remarks": "",
+              "PhoneNo": "",
+              "FaxNo": "",
+              "EMail": "",
+              "Website": "",
+              "POBoxNo": "",
+              "HoldingPer": ""
+            },
+            {
+              "RelationType": "subsidiary",
+              "Name": "Indo-Russian Helicopters Limited",
+              "Address": "",
+              "TurnOver": "",
+              "Profit": "",
+              "Remarks": "",
+              "PhoneNo": "",
+              "FaxNo": "",
+              "EMail": "",
+              "Website": "",
+              "POBoxNo": "",
+              "HoldingPer": ""
+            },
+            {
+              "RelationType": "joint ventures",
+              "Name": "International Aerospace Manufacturing Private Limited",
+              "Address": "",
+              "TurnOver": "",
+              "Profit": "",
+              "Remarks": "",
+              "PhoneNo": "",
+              "FaxNo": "",
+              "EMail": "",
+              "Website": "",
+              "POBoxNo": "",
+              "HoldingPer": ""
+            },
+            {
+              "RelationType": "joint ventures",
+              "Name": "BAeHAL Software Limited",
+              "Address": "",
+              "TurnOver": "",
+              "Profit": "",
+              "Remarks": "",
+              "PhoneNo": "",
+              "FaxNo": "",
+              "EMail": "",
+              "Website": "",
+              "POBoxNo": "",
+              "HoldingPer": ""
+            },
+            {
+              "RelationType": "joint ventures",
+              "Name": "Snecma HAL Aerospace Private Limited",
+              "Address": "",
+              "TurnOver": "",
+              "Profit": "",
+              "Remarks": "",
+              "PhoneNo": "",
+              "FaxNo": "",
+              "EMail": "",
+              "Website": "",
+              "POBoxNo": "",
+              "HoldingPer": ""
+            },
+            {
+              "RelationType": "joint ventures",
+              "Name": "SAMTEL HAL Display Systems Limited",
+              "Address": "",
+              "TurnOver": "",
+              "Profit": "",
+              "Remarks": "",
+              "PhoneNo": "",
+              "FaxNo": "",
+              "EMail": "",
+              "Website": "",
+              "POBoxNo": "",
+              "HoldingPer": ""
+            },
+            {
+              "RelationType": "joint ventures",
+              "Name": "Infotech HAL Umited",
+              "Address": "",
+              "TurnOver": "",
+              "Profit": "",
+              "Remarks": "",
+              "PhoneNo": "",
+              "FaxNo": "",
+              "EMail": "",
+              "Website": "",
+              "POBoxNo": "",
+              "HoldingPer": ""
+            },
+            {
+              "RelationType": "joint ventures",
+              "Name": "HAL-Edgewood Technologies Private Umited",
+              "Address": "",
+              "TurnOver": "",
+              "Profit": "",
+              "Remarks": "",
+              "PhoneNo": "",
+              "FaxNo": "",
+              "EMail": "",
+              "Website": "",
+              "POBoxNo": "",
+              "HoldingPer": ""
+            },
+            {
+              "RelationType": "joint ventures",
+              "Name": "HALBIT Avionics Private Limited",
+              "Address": "",
+              "TurnOver": "",
+              "Profit": "",
+              "Remarks": "",
+              "PhoneNo": "",
+              "FaxNo": "",
+              "EMail": "",
+              "Website": "",
+              "POBoxNo": "",
+              "HoldingPer": ""
+            },
+            {
+              "RelationType": "joint ventures",
+              "Name": "Indo-Russian Aviation Limited",
+              "Address": "",
+              "TurnOver": "",
+              "Profit": "",
+              "Remarks": "",
+              "PhoneNo": "",
+              "FaxNo": "",
+              "EMail": "",
+              "Website": "",
+              "POBoxNo": "",
+              "HoldingPer": ""
+            },
+            {
+              "RelationType": "joint ventures",
+              "Name": "HATSOFF Helicopter Training Private Limited",
+              "Address": "",
+              "TurnOver": "",
+              "Profit": "",
+              "Remarks": "",
+              "PhoneNo": "",
+              "FaxNo": "",
+              "EMail": "",
+              "Website": "",
+              "POBoxNo": "",
+              "HoldingPer": ""
+            },
+            {
+              "RelationType": "joint ventures",
+              "Name": "TATA HAL Technologies Limited",
+              "Address": "",
+              "TurnOver": "",
+              "Profit": "",
+              "Remarks": "",
+              "PhoneNo": "",
+              "FaxNo": "",
+              "EMail": "",
+              "Website": "",
+              "POBoxNo": "",
+              "HoldingPer": ""
+            },
+            {
+              "RelationType": "joint ventures",
+              "Name": "Multirole Transport Aircraft Limited",
+              "Address": "",
+              "TurnOver": "",
+              "Profit": "",
+              "Remarks": "",
+              "PhoneNo": "",
+              "FaxNo": "",
+              "EMail": "",
+              "Website": "",
+              "POBoxNo": "",
+              "HoldingPer": ""
+            },
+            {
+              "RelationType": "joint ventures",
+              "Name": "Aerospace Aviation and Sectors Skill Council",
+              "Address": "",
+              "TurnOver": "",
+              "Profit": "",
+              "Remarks": "",
+              "PhoneNo": "",
+              "FaxNo": "",
+              "EMail": "",
+              "Website": "",
+              "POBoxNo": "",
+              "HoldingPer": ""
+            },
+            {
+              "RelationType": "joint ventures",
+              "Name": "Helicopter, Engines NRC Pvt Ltd",
+              "Address": "",
+              "TurnOver": "",
+              "Profit": "",
+              "Remarks": "",
+              "PhoneNo": "",
+              "FaxNo": "",
+              "EMail": "",
+              "Website": "",
+              "POBoxNo": "",
+              "HoldingPer": ""
+            }
+          ]
+        },
+        "MajorCustomers": "",
+        "MajorSuppliers": "",
+        "Manpower": "26432",
+        "NetWorth": "",
+        "Operations": "The subject is engaged in manufacturing of defence equipments. \n \nAbout the company (As procured from desktop searches): \n============================================== \nHindustan Aeronautics Limited (HAL), was incorporated in 1963 by amalgamation of Hindustan Aircraft Limited and Aeronautics India Limited, is a Navratana Company. Government of India (GoI) holds majority stake of 89.97% following listing of shares on March 28, 2018. HAL is into carrying out design, development, manufacture, repair and overhaul of aircraft, helicopter, engines and related systems like avionics, instruments and accessories primarily serving Indian defence programme. It also manufactures the structural parts of various Satellite Launch Vehicles of the Indian Space \nResearch Organization (ISRO). \n \nThe manufacturing programs underway at HAL are production of SU-30 MKI, LCA & DO-228 aircraft and ALH-Dhruv, Chetak, Cheetal & LCH Helicopters. The Repair Overhaul (ROH) programs being carried out presently are Jaguar (with upgrade), Mirage (with upgrade), Kiran, HS-748, AN-32, MiG 21, Su-30 MKI, Hawk, Dornier Do-228, ALH, Cheetal, Cheetah and Chetak. \n \nThe Company takes up maintenance and overhaul services to cover the life cycle requirement of all the old and new products. Presently, 13 types of Aircraft/ Helicopters and Engines are being overhauled. In addition, facilities exist for repair/ overhaul of various Accessories and Avionics fitted on Aircraft of Russian, Western and Indigenous designs. \n \nIn line with HAL's mission to become a global player, Exports have been identified as one of the thrust areas. HAL has supplied Dhruv, Lancer, Chetak & Cheetah helicopters and Do-228 aircraft to international customers and is also providing product support for the above platforms. The company has established its credibility through supply of high precision structural & composite work packages, assemblies, avionics etc to Global Aviation majors like Airbus, Boeing, Rolls Royce, IAI, Rosoboronexport etc. \n \nThe major on-going indigenous development programs are the Light Combat Aircraft (LCA) MK 1A, Light Combat Helicopter(LCH), Light Utility Helicopter (LUH), Basic Turboprop Trainer HTT 40 & Indian Multi Role Helicopter (IMRH). Design and Development of HTFE-25 and HTSE-1200 engines have also been taken up. \n \nCurrent upgrade programs include Jaguar DARIN-III upgrade, Mirage upgrade and Hawk i. In addition to the platforms, various Technology development projects have also been launched to increase self-reliance in critical areas like the Aircraft Display systems, Mission Computers, Automatic Flight Controls for Helicopters and Aircraft Accessories & Avionics. \n \nSearch Result based on GSTIN/UIN : 29AAACH3641R1Z3 \nFiling details for GSTR3B \n2023-2024\tDecember\t19/01/2024\tFiled \n2023-2024\tNovember\t19/12/2023\tFiled \n2023-2024\tOctober\t20/11/2023\tFiled \n2023-2024\tSeptember\t20/10/2023\tFiled \n2023-2024\tAugust\t20/09/2023\tFiled \n2023-2024\tJuly\t19/08/2023\tFiled \n2023-2024\tJune\t20/07/2023\tFiled \n2023-2024\tMay\t20/06/2023\tFiled \n2023-2024\tApril\t20/05/2023\tFiled \n2022-2023\tMarch\t19/04/2023\tFiled \nFiling details for GSTR-1/IFF \n2023-2024\tDecember\t11/01/2024\tFiled \n2023-2024\tNovember\t11/12/2023\tFiled \n2023-2024\tOctober\t10/11/2023\tFiled \n2023-2024\tSeptember\t11/10/2023\tFiled \n2023-2024\tAugust\t11/09/2023\tFiled \n2023-2024\tJuly\t09/08/2023\tFiled \n2023-2024\tJune\t11/07/2023\tFiled \n2023-2024\tMay\t09/06/2023\tFiled \n2023-2024\tApril\t09/05/2023\tFiled \n2022-2023\tMarch\t11/04/2023\tFiled \nFiling details for GSTR9 \n2022-2023\tAnnual\t27/12/2023\tFiled \n2021-2022\tAnnual\t31/12/2022\tFiled \n2020-2021\tAnnual\t28/02/2022\tFiled \n2019-2020\tAnnual\t08/04/2021\tFiled \n2018-2019\tAnnual\t08/01/2021\tFiled \n2017-2018\tAnnual\t11/02/2020\tFiled \nFiling details for GSTR9C \n2022-2023\tAnnual\t27/12/2023\tFiled \n2021-2022\tAnnual\t31/12/2022\tFiled \n2020-2021\tAnnual\t25/03/2022\tFiled \n2019-2020\tAnnual\t11/06/2021\tFiled \n2018-2019\tAnnual\t16/01/2021\tFiled \n2017-2018\tAnnual\t15/02/2020\tFiled",
+        "OperationActivities": {
+          "OtherOperation": [
+            {
+              "Operation": "Product Description",
+              "OperationDetail": "Aircraft \nHelicopters \nPower Plant \nAvionics \nSystem and Accessories"
+            },
+            {
+              "Operation": "Statutory Dues",
+              "OperationDetail": "Please refer to annual report."
+            }
+          ]
+        },
+        "PrincipalBusiness": "Engaged in manufacturing of defence equipment's.",
+        "PaidupCapital": "3 343 875 000",
+        "Partners": "",
+        "ReportID": "50096",
+        "ReportDate": "25-Jan-2024",
+        "RegistrationNumber": "L35301KA1963GOI001622",
+        "RegistrationDate": "16-Aug-1963",
+        "RegisteredAddress": {
+          "Address": "15/1, Cubbon Road,Post Box No.5150 Bangalore",
+          "City": "Bangalore",
+          "PinCode": "560001",
+          "State": "Karnataka",
+          "Country": "India",
+          "IsoCountry": "IN",
+          "Phone": "+91 80 22866001 / 22320701",
+          "Fax": "91 80 22867533  22868758  22320758",
+          "Email": "cosec@hal-india.co.in , marketing@hal-india.com , root@bnghal.kar.nic.in , cosec@hal-india.com; cosec@hal-india.co.in",
+          "Website": "www.hal-india.co.in",
+          "Location": "",
+          "Status": "",
+          "Area": "",
+          "AddressComment": "",
+          "StatusComments": "* The complete and correct registered office address of the subject as per official registry records (ROC) is mentioned above. \n \n* Being a listed company secure contact could not be established and as a result import and export details could not be obtained. Hence same is not enclosed in the report. \n \n* The subject is available on EPFO site. \n \n* Recommendations are largely based on subjects overall operational base, longevity, turnover levels and financials performance. Though Conservative as the subject is having high average payment days."
+        },
+        "ShareHolders": {
+          "@value": "As on December 31, 2023 (Major Shareholding)",
+          "ShareHolder": [
+            {
+              "Name": "President Of India",
+              "NoOfShares": "479102424.00",
+              "PercentageHolding": "71.64",
+              "Nationality": "",
+              "TypeOfShares": ""
+            },
+            {
+              "Name": "Hdfc Trustee Company Ltd",
+              "NoOfShares": "22909731.00",
+              "PercentageHolding": "3.43",
+              "Nationality": "",
+              "TypeOfShares": ""
+            },
+            {
+              "Name": "Life Insurance Corporation Of India",
+              "NoOfShares": "10659802.00",
+              "PercentageHolding": "1.59",
+              "Nationality": "",
+              "TypeOfShares": ""
+            },
+            {
+              "Name": "Government Of Singapore",
+              "NoOfShares": "6941388.00",
+              "PercentageHolding": "1.04",
+              "Nationality": "",
+              "TypeOfShares": ""
+            },
+            {
+              "Name": "TOTAL",
+              "NoOfShares": "519613345.00",
+              "PercentageHolding": "78.00",
+              "Nationality": "",
+              "TypeOfShares": ""
+            }
+          ],
+          "Comments": "* The above mentioned list of shareholders reflects the major shareholding pattern of the subject, consisting of shareholders with significantly large holding."
+        },
+        "ShareHolderBackground": "",
+        "StockListing": {
+          "Listed": "Yes",
+          "Exchange": "Bombay Stock Exchange"
+        },
+        "ShareTradeDetails": {
+          "MarketValueAsOn": "25-Jan-2024",
+          "MarketValueOfShare": "2887.70",
+          "FiftyTwoWeekHigh": "2887.70",
+          "FiftyTwoWeekLow": "1,150.50",
+          "EPS": "90.39"
+        },
+        "FinancialStatement": {
+          "Currency": "INR",
+          "Units": "Thousands",
+          "TypeOfFinancial": "Standalone",
+          "PeriodYear1": "12 months",
+          "PeriodYear2": "12 months",
+          "PeriodYear3": "12 months",
+          "AccountTypeYear1": "Audited",
+          "AccountTypeYear2": "Audited",
+          "AccountTypeYear3": "Audited",
+          "SourceYear1": "Public",
+          "SourceYear2": "Public",
+          "SourceYear3": "Public",
+          "FinancialSummary": {
+            "@YearEnding": "",
+            "@Year1": "31-Mar-2023",
+            "@Year2": "31-Mar-2022",
+            "@Year3": "31-Mar-2021",
+            "@Narr": "INR  in '000",
+            "FinHead": [
+              {
+                "HeadName": "Net Worth",
+                "Year1": "235061700.00",
+                "Year2": "192640000.00",
+                "Year3": "153681800.00"
+              },
+              {
+                "HeadName": "Variation",
+                "Year1": "22.02%",
+                "Year2": "25.35%",
+                "Year3": ""
+              },
+              {
+                "HeadName": "Operating Revenue",
+                "Year1": "269278500.00",
+                "Year2": "246202100.00",
+                "Year3": "228823600.00"
+              },
+              {
+                "HeadName": "Variation",
+                "Year1": "9.37%",
+                "Year2": "7.59%",
+                "Year3": ""
+              },
+              {
+                "HeadName": "Total Income",
+                "Year1": "285996500.00",
+                "Year2": "256065500.00",
+                "Year3": "232402500.00"
+              },
+              {
+                "HeadName": "Variation",
+                "Year1": "11.69%",
+                "Year2": "10.18%",
+                "Year3": ""
+              },
+              {
+                "HeadName": "Profit Before Tax",
+                "Year1": "64929400.00",
+                "Year2": "52311500.00",
+                "Year3": "42773800.00"
+              },
+              {
+                "HeadName": "Variation",
+                "Year1": "24.12%",
+                "Year2": "22.3%",
+                "Year3": ""
+              },
+              {
+                "HeadName": "Profit After Tax",
+                "Year1": "58111700.00",
+                "Year2": "50865000.00",
+                "Year3": "32394500.00"
+              },
+              {
+                "HeadName": "Variation",
+                "Year1": "14.25%",
+                "Year2": "57.02%",
+                "Year3": ""
+              }
+            ]
+          },
+          "ForexRates": {
+            "Currency": [
+              "USD",
+              "GBP",
+              "100 Jap Yen",
+              "SGD",
+              "EURO",
+              "CAD",
+              "CHF",
+              "HKD",
+              "AUD",
+              "AED",
+              "USD",
+              "GBP",
+              "EUR",
+              "INR",
+              "AUD",
+              "CHF",
+              "CAD",
+              "SGD",
+              "HKD",
+              "JPY"
+            ],
+            "INR": [
+              "INR 65.50",
+              "INR 101.07",
+              "INR 54.42",
+              "INR 46.77",
+              "INR 72.25",
+              "INR 50.11",
+              "INR 66.37",
+              "INR 8.45",
+              "INR 46.77",
+              "INR 17.84",
+              "AED 3.67",
+              "AED 6.15",
+              "AED 5.09",
+              "AED 0.06",
+              "AED 3.45",
+              "AED 4.19",
+              "AED 3.34",
+              "AED 2.94",
+              "AED 0.47",
+              "AED 0.04"
+            ]
+          },
+          "CommentOnFinances": "* The information provided in this report is largely based on the information procured from the subject's records file at Official Registry Records (ROC).",
+          "BalanceSheet": {
+            "@Year1": "31-Mar-2023",
+            "@Year2": "31-Mar-2022",
+            "@Year3": "31-Mar-2021",
+            "@Narr": "INR  in '000",
+            "MainHead": [
+              {
+                "@name": "EQUITY AND LIABILITIES",
+                "Head": [
+                  {
+                    "@name": "Shareholders' Funds",
+                    "@Year1": "235061700.00",
+                    "@Year2": "192640000.00",
+                    "@Year3": "153681800.00",
+                    "SubHead": [
+                      {
+                        "@Name": "Share Capital",
+                        "Year1": "3343900.00",
+                        "Year2": "3343900.00",
+                        "Year3": "3343900.00"
+                      },
+                      {
+                        "@Name": "Other Equity",
+                        "Year1": "231717800.00",
+                        "Year2": "189296100.00",
+                        "Year3": "150337900.00"
+                      }
+                    ]
+                  },
+                  {
+                    "@name": "Non-current liabilities",
+                    "@Year1": "127857900.00",
+                    "@Year2": "140371400.00",
+                    "@Year3": "99073800.00",
+                    "SubHead": [
+                      {
+                        "@Name": "Other Financial Liabilities",
+                        "Year1": "5250300.00",
+                        "Year2": "5246800.00",
+                        "Year3": "4950300.00"
+                      },
+                      {
+                        "@Name": "Long-term provisions",
+                        "Year1": "13329400.00",
+                        "Year2": "12482400.00",
+                        "Year3": "2410500.00"
+                      },
+                      {
+                        "@Name": "Other Long term liabilities",
+                        "Year1": "109260000.00",
+                        "Year2": "122624400.00",
+                        "Year3": "91713000.00"
+                      }
+                    ]
+                  },
+                  {
+                    "@name": "Current liabilities",
+                    "@Year1": "308254200.00",
+                    "@Year2": "250198500.00",
+                    "@Year3": "264141900.00",
+                    "SubHead": [
+                      {
+                        "@Name": "Short-term borrowings",
+                        "Year1": "0.00",
+                        "Year2": "0.00",
+                        "Year3": "90700.00"
+                      },
+                      {
+                        "@Name": "Trade payables",
+                        "Year1": "31373400.00",
+                        "Year2": "25597700.00",
+                        "Year3": "32608100.00"
+                      },
+                      {
+                        "@Name": "Other Financial Liabilities",
+                        "Year1": "21073400.00",
+                        "Year2": "18502400.00",
+                        "Year3": "19498200.00"
+                      },
+                      {
+                        "@Name": "Other current liabilities",
+                        "Year1": "185366700.00",
+                        "Year2": "147548400.00",
+                        "Year3": "168366800.00"
+                      },
+                      {
+                        "@Name": "Short-term provisions",
+                        "Year1": "67766500.00",
+                        "Year2": "50557800.00",
+                        "Year3": "39352700.00"
+                      },
+                      {
+                        "@Name": "Current Tax Liabilities (Net)",
+                        "Year1": "2672800.00",
+                        "Year2": "7991400.00",
+                        "Year3": "4225400.00"
+                      }
+                    ]
+                  },
+                  {
+                    "@name": "TOTAL",
+                    "@Year1": "671173800.00",
+                    "@Year2": "583209900.00",
+                    "@Year3": "516897500.00"
+                  }
+                ]
+              },
+              {
+                "@name": "ASSETS",
+                "Head": [
+                  {
+                    "@name": "Non-current assets",
+                    "@Year1": "152310700.00",
+                    "@Year2": "133138700.00",
+                    "@Year3": "113039100.00",
+                    "SubHead": [
+                      {
+                        "@Name": "Fixed Assets",
+                        "Year1": "87112100.00",
+                        "Year2": "92299600.00",
+                        "Year3": "91063400.00"
+                      },
+                      {
+                        "@Name": "Tangible assets",
+                        "Year1": "57915600.00",
+                        "Year2": "59198500.00",
+                        "Year3": "62138500.00"
+                      },
+                      {
+                        "@Name": "Capital work-in-progress",
+                        "Year1": "6358100.00",
+                        "Year2": "9480100.00",
+                        "Year3": "6621500.00"
+                      },
+                      {
+                        "@Name": "Investment Property",
+                        "Year1": "300.00",
+                        "Year2": "300.00",
+                        "Year3": "300.00"
+                      },
+                      {
+                        "@Name": "Intangible assets",
+                        "Year1": "10357400.00",
+                        "Year2": "8382600.00",
+                        "Year3": "9440700.00"
+                      },
+                      {
+                        "@Name": "Intangible assets under development",
+                        "Year1": "12481000.00",
+                        "Year2": "15238400.00",
+                        "Year3": "12862700.00"
+                      },
+                      {
+                        "@Name": "Investments in Associates & Joint Ventures",
+                        "Year1": "1102100.00",
+                        "Year2": "1101200.00",
+                        "Year3": "1056900.00"
+                      },
+                      {
+                        "@Name": "Investment Property",
+                        "Year1": "12751800.00",
+                        "Year2": "11840200.00",
+                        "Year3": "9492600.00"
+                      },
+                      {
+                        "@Name": "Long-term loans and advances",
+                        "Year1": "62100.00",
+                        "Year2": "62300.00",
+                        "Year3": "75000.00"
+                      },
+                      {
+                        "@Name": "Non-current Financial Assets",
+                        "Year1": "4059800.00",
+                        "Year2": "4033000.00",
+                        "Year3": "3763900.00"
+                      },
+                      {
+                        "@Name": "Deferred tax assets(net)",
+                        "Year1": "11257100.00",
+                        "Year2": "5655700.00",
+                        "Year3": "523500.00"
+                      },
+                      {
+                        "@Name": "Other non-current assets",
+                        "Year1": "35965400.00",
+                        "Year2": "18146400.00",
+                        "Year3": "7063500.00"
+                      }
+                    ]
+                  },
+                  {
+                    "@name": "Current assets",
+                    "@Year1": "518863100.00",
+                    "@Year2": "450071200.00",
+                    "@Year3": "403858400.00",
+                    "SubHead": [
+                      {
+                        "@Name": "Inventories",
+                        "Year1": "121606700.00",
+                        "Year2": "143635800.00",
+                        "Year3": "166885600.00"
+                      },
+                      {
+                        "@Name": "Trade receivables",
+                        "Year1": "47190700.00",
+                        "Year2": "46415500.00",
+                        "Year3": "56695500.00"
+                      },
+                      {
+                        "@Name": "Other --",
+                        "Year1": "93764000.00",
+                        "Year2": "78086500.00",
+                        "Year3": "84476800.00"
+                      },
+                      {
+                        "@Name": "Cash and cash equivalents",
+                        "Year1": "44390000.00",
+                        "Year2": "30691400.00",
+                        "Year3": "71414800.00"
+                      },
+                      {
+                        "@Name": "Bank balance other than above",
+                        "Year1": "158671500.00",
+                        "Year2": "112744700.00",
+                        "Year3": "248500.00"
+                      },
+                      {
+                        "@Name": "Short-term loans and advances",
+                        "Year1": "76200.00",
+                        "Year2": "80600.00",
+                        "Year3": "77400.00"
+                      },
+                      {
+                        "@Name": "Other Current Financial Assets",
+                        "Year1": "11189800.00",
+                        "Year2": "10247400.00",
+                        "Year3": "10103500.00"
+                      },
+                      {
+                        "@Name": "Current Tax Assets (Net)",
+                        "Year1": "0.00",
+                        "Year2": "0.00",
+                        "Year3": "0.00"
+                      },
+                      {
+                        "@Name": "Other current assets",
+                        "Year1": "41893100.00",
+                        "Year2": "28088200.00",
+                        "Year3": "13956300.00"
+                      },
+                      {
+                        "@Name": "Assets classified as held for sale",
+                        "Year1": "81100.00",
+                        "Year2": "81100.00",
+                        "Year3": "0.00"
+                      }
+                    ]
+                  },
+                  {
+                    "@name": "TOTAL",
+                    "@Year1": "671173800.00",
+                    "@Year2": "583209900.00",
+                    "@Year3": "516897500.00"
+                  }
+                ]
+              }
+            ]
+          },
+          "PLAccount": {
+            "@Year1": "31-Mar-2023",
+            "@Year2": "31-Mar-2022",
+            "@Year3": "31-Mar-2021",
+            "@Narr": "INR  in '000",
+            "Head": [
+              {
+                "@value": "Revenue",
+                "@Year1": "285996500.00",
+                "@Year2": "256065500.00",
+                "@Year3": "232402500.00",
+                "SubHead": [
+                  {
+                    "@value": "Revenue from operations",
+                    "Year1": "269278500.00",
+                    "Year2": "246202100.00",
+                    "Year3": "228823600.00"
+                  },
+                  {
+                    "@value": "Other income",
+                    "Year1": "16718000.00",
+                    "Year2": "9863400.00",
+                    "Year3": "3578900.00"
+                  }
+                ]
+              },
+              {
+                "@value": "Expenses",
+                "@Year1": "221067100.00",
+                "@Year2": "203754000.00",
+                "@Year3": "189648900.00",
+                "SubHead": [
+                  {
+                    "@value": "Cost of materials consumed",
+                    "Year1": "100102600.00",
+                    "Year2": "87552500.00",
+                    "Year3": "79191500.00"
+                  },
+                  {
+                    "@value": "Purchase of Stock-in-Trade",
+                    "Year1": "7991500.00",
+                    "Year2": "6566800.00",
+                    "Year3": "8211600.00"
+                  },
+                  {
+                    "@value": "Changes in inventories of finished goods work-in-progress and Stock-in-Trade",
+                    "Year1": "-6914500.00",
+                    "Year2": "5922900.00",
+                    "Year3": "24582700.00"
+                  },
+                  {
+                    "@value": "Employee benefits expense",
+                    "Year1": "48958900.00",
+                    "Year2": "45898300.00",
+                    "Year3": "42910200.00"
+                  },
+                  {
+                    "@value": "Finance Cost",
+                    "Year1": "579100.00",
+                    "Year2": "581400.00",
+                    "Year3": "2591100.00"
+                  },
+                  {
+                    "@value": "Depreciation and amortization expense",
+                    "Year1": "17839100.00",
+                    "Year2": "11098700.00",
+                    "Year3": "11571900.00"
+                  },
+                  {
+                    "@value": "Impairment gain / (loss) - net",
+                    "Year1": "5974300.00",
+                    "Year2": "1764300.00",
+                    "Year3": "638500.00"
+                  },
+                  {
+                    "@value": "Other expenses",
+                    "Year1": "15579600.00",
+                    "Year2": "12087400.00",
+                    "Year3": "12072300.00"
+                  },
+                  {
+                    "@value": "Direct Expenses",
+                    "Year1": "5160300.00",
+                    "Year2": "3231500.00",
+                    "Year3": "2597700.00"
+                  },
+                  {
+                    "@value": "Provisions",
+                    "Year1": "37426400.00",
+                    "Year2": "37391800.00",
+                    "Year3": "14620800.00"
+                  },
+                  {
+                    "@value": "Less: Amount Transferred to Product Development Cost",
+                    "Year1": "-11630200.00",
+                    "Year2": "-8341600.00",
+                    "Year3": "-9339400.00"
+                  }
+                ]
+              },
+              {
+                "@value": "Profit before exceptional and extraordinary items and tax",
+                "@Year1": "64929400.00",
+                "@Year2": "52311500.00",
+                "@Year3": "42753600.00"
+              },
+              {
+                "@value": "Exceptional items",
+                "@Year1": "",
+                "@Year2": "",
+                "@Year3": "20200.00"
+              },
+              {
+                "@value": "Profit before extraordinary items and tax",
+                "@Year1": "64929400.00",
+                "@Year2": "52311500.00",
+                "@Year3": "42773800.00"
+              },
+              {
+                "@value": "Profit (Loss) before tax",
+                "@Year1": "64929400.00",
+                "@Year2": "52311500.00",
+                "@Year3": "42773800.00"
+              },
+              {
+                "@value": "Tax Expenses",
+                "@Year1": "6817700.00",
+                "@Year2": "1446500.00",
+                "@Year3": "10379300.00",
+                "SubHead": [
+                  {
+                    "@value": "Current tax",
+                    "Year1": "22500000.00",
+                    "Year2": "19000000.00",
+                    "Year3": "6450000.00"
+                  },
+                  {
+                    "@value": "Taxes",
+                    "Year1": "-9734600.00",
+                    "Year2": "-11927300.00",
+                    "Year3": "-493300.00"
+                  },
+                  {
+                    "@value": "Deferred tax",
+                    "Year1": "-5947700.00",
+                    "Year2": "-5626200.00",
+                    "Year3": "4422600.00"
+                  }
+                ]
+              },
+              {
+                "@value": "Profit (Loss) for the period from continuing operations",
+                "@Year1": "58111700.00",
+                "@Year2": "50865000.00",
+                "@Year3": "32394500.00"
+              },
+              {
+                "@value": "Profit (Loss) for the period",
+                "@Year1": "58111700.00",
+                "@Year2": "50865000.00",
+                "@Year3": "32394500.00"
+              },
+              {
+                "@value": "Earnings per equity share:Basic",
+                "@Year1": "",
+                "@Year2": "",
+                "@Year3": "96.68"
+              },
+              {
+                "@value": "Earnings per equity share:Diluted",
+                "@Year1": "0.00",
+                "@Year2": "0.00",
+                "@Year3": "96.68"
+              }
+            ]
+          },
+          "KeyRatios": {
+            "@Year1": "31-Mar-2023",
+            "@Year2": "31-Mar-2022",
+            "@Year3": "31-Mar-2021",
+            "@Narr": "",
+            "RatioType": [
+              {
+                "@Name": "Solvency Ratios",
+                "Ratio": [
+                  {
+                    "RatioName": "Current Ratio",
+                    "Year1": "1.68",
+                    "Year2": "1.8",
+                    "Year3": "1.53"
+                  },
+                  {
+                    "RatioName": "Quick Ratio",
+                    "Year1": "1.29",
+                    "Year2": "1.22",
+                    "Year3": "0.9"
+                  }
+                ]
+              },
+              {
+                "@Name": "Leverage Ratios",
+                "Ratio": [
+                  {
+                    "RatioName": "Debt Ratio",
+                    "Year1": "0.62",
+                    "Year2": "0.64",
+                    "Year3": "0.69"
+                  },
+                  {
+                    "RatioName": "Debt Equity Ratio",
+                    "Year1": "0.46",
+                    "Year2": "0.64",
+                    "Year3": "0.6"
+                  },
+                  {
+                    "RatioName": "Curr.Liab./Net Worth",
+                    "Year1": "1.31",
+                    "Year2": "1.3",
+                    "Year3": "1.72"
+                  },
+                  {
+                    "RatioName": "Fixed Asset/ Net Worth",
+                    "Year1": "0.37",
+                    "Year2": "0.48",
+                    "Year3": "0.59"
+                  },
+                  {
+                    "RatioName": "Interest Coverage Ratio",
+                    "Year1": "113.12",
+                    "Year2": "90.98",
+                    "Year3": "17.51"
+                  }
+                ]
+              },
+              {
+                "@Name": "Efficiency Ratios",
+                "Ratio": [
+                  {
+                    "RatioName": "Average Collection Days",
+                    "Year1": "63.97",
+                    "Year2": "68.81",
+                    "Year3": "90.44"
+                  },
+                  {
+                    "RatioName": "Account Receiv. Turnover",
+                    "Year1": "5.71",
+                    "Year2": "5.3",
+                    "Year3": "4.04"
+                  },
+                  {
+                    "RatioName": "Average Payment Days",
+                    "Year1": "113.18",
+                    "Year2": "93.39",
+                    "Year3": "106.28"
+                  },
+                  {
+                    "RatioName": "Inventory Turnover",
+                    "Year1": "2.21",
+                    "Year2": "1.71",
+                    "Year3": "1.37"
+                  },
+                  {
+                    "RatioName": "Asset Turnover",
+                    "Year1": "3.09",
+                    "Year2": "2.67",
+                    "Year3": "2.51"
+                  }
+                ]
+              },
+              {
+                "@Name": "Profitability Ratios",
+                "Ratio": [
+                  {
+                    "RatioName": "Operating Profit Margin",
+                    "Year1": "24.33",
+                    "Year2": "21.48",
+                    "Year3": "19.83"
+                  },
+                  {
+                    "RatioName": "Net  Profit Margin",
+                    "Year1": "21.58",
+                    "Year2": "20.66",
+                    "Year3": "14.16"
+                  },
+                  {
+                    "RatioName": "Return on Total Assets",
+                    "Year1": "8.66",
+                    "Year2": "8.72",
+                    "Year3": "6.27"
+                  },
+                  {
+                    "RatioName": "Return On Equity",
+                    "Year1": "24.72",
+                    "Year2": "26.4",
+                    "Year3": "21.08"
+                  }
+                ]
+              }
+            ]
+          },
+          "RatioExplanations": {
+            "Ratio": [
+              {
+                "@HeadName": "SOLVENCY RATIOS",
+                "Explanation": [
+                  {
+                    "Name": "Current Ratio",
+                    "Formula": "Current Assets / Current Liabilities"
+                  },
+                  {
+                    "Name": "Quick Ratio",
+                    "Formula": "(Current Assets - Inventories) / Current Liab."
+                  }
+                ]
+              },
+              {
+                "@HeadName": "LEVERAGE RATIOS",
+                "Explanation": [
+                  {
+                    "Name": "Debt Ratio",
+                    "Formula": "Borrowing + Current Liab. / Total Assets"
+                  },
+                  {
+                    "Name": "Debt Equity Ratio",
+                    "Formula": "Borrowings / Net Worth"
+                  },
+                  {
+                    "Name": "Current Liabilities / Net Worth",
+                    "Formula": "Current Liabilities / Net Worth"
+                  },
+                  {
+                    "Name": "Fixed Asset / Net Worth",
+                    "Formula": "Net Fixed Asset / Net Worth"
+                  },
+                  {
+                    "Name": "Interest Coverage Ratio",
+                    "Formula": "PBIT / Financial Charges"
+                  }
+                ]
+              },
+              {
+                "@HeadName": "EFFICIENCY RATIOS",
+                "Explanation": [
+                  {
+                    "Name": "Average Collection Days",
+                    "Formula": "Sundry Debtors / Operating Income * 365 Days"
+                  },
+                  {
+                    "Name": "Account Receivable Turnover",
+                    "Formula": "Operating Income / Sundry Debtors"
+                  },
+                  {
+                    "Name": "Average Payment Days",
+                    "Formula": "Sundry Creditors / Purchase * 365 Days"
+                  },
+                  {
+                    "Name": "Inventory Turnover",
+                    "Formula": "Operating Income / Inventories"
+                  },
+                  {
+                    "Name": "Asset Turnover",
+                    "Formula": "Operating Income / Net Fixed Assets"
+                  }
+                ]
+              },
+              {
+                "@HeadName": "PROFITABILITY RATIOS(%)",
+                "Explanation": [
+                  {
+                    "Name": "PAT / Total Income",
+                    "Formula": "(PAT / Total Income) * 100"
+                  },
+                  {
+                    "Name": "Net Profit Margin",
+                    "Formula": "(PBT / Operating Income) * 100"
+                  },
+                  {
+                    "Name": "Return on Total Assets",
+                    "Formula": "(PAT / Total Assets) * 100"
+                  },
+                  {
+                    "Name": "Return on Investments",
+                    "Formula": "(PAT / Net Worth) * 100"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "FinancialStatementPFF": "",
+        "FinancialStatementConsolidated": {
+          "Currency": "INR",
+          "Units": "Thousands",
+          "TypeOfFinancial": "Consolidated",
+          "PeriodYear1": "12 months",
+          "PeriodYear2": "12 months",
+          "PeriodYear3": "",
+          "AccountTypeYear1": "Audited",
+          "AccountTypeYear2": "Audited",
+          "AccountTypeYear3": "",
+          "SourceYear1": "Public",
+          "SourceYear2": "Public",
+          "SourceYear3": "",
+          "BSNewDataConsolidated": {
+            "@Year1": "31-Mar-2023",
+            "@Year2": "31-Mar-2022",
+            "@Year3": "",
+            "@Narr": "INR  in '000",
+            "MainHead": [
+              {
+                "@name": "EQUITY AND LIABILITIES",
+                "Head": [
+                  {
+                    "@name": "Shareholders' Funds",
+                    "@Year1": "235721500.00",
+                    "@Year2": "193131300.00",
+                    "@Year3": "",
+                    "SubHead": [
+                      {
+                        "@Name": "Share Capital",
+                        "Year1": "3343900.00",
+                        "Year2": "3343900.00",
+                        "Year3": "0.00"
+                      },
+                      {
+                        "@Name": "Other Equity",
+                        "Year1": "232377600.00",
+                        "Year2": "189787400.00",
+                        "Year3": "0.00"
+                      }
+                    ]
+                  },
+                  {
+                    "@name": "Non-controlling interest",
+                    "@Year1": "37400.00",
+                    "@Year2": "37500.00",
+                    "@Year3": ""
+                  },
+                  {
+                    "@name": "Non-current liabilities",
+                    "@Year1": "128006400.00",
+                    "@Year2": "140525600.00",
+                    "@Year3": "",
+                    "SubHead": [
+                      {
+                        "@Name": "Other Financial Liabilities",
+                        "Year1": "5250300.00",
+                        "Year2": "5247000.00",
+                        "Year3": "0.00"
+                      },
+                      {
+                        "@Name": "Long-term provisions",
+                        "Year1": "13471000.00",
+                        "Year2": "12630100.00",
+                        "Year3": "0.00"
+                      },
+                      {
+                        "@Name": "Other Long term liabilities",
+                        "Year1": "109260000.00",
+                        "Year2": "122624400.00",
+                        "Year3": "0.00"
+                      }
+                    ]
+                  },
+                  {
+                    "@name": "Current liabilities",
+                    "@Year1": "308272700.00",
+                    "@Year2": "250225400.00",
+                    "@Year3": "",
+                    "SubHead": [
+                      {
+                        "@Name": "Trade payables",
+                        "Year1": "31349700.00",
+                        "Year2": "25576100.00",
+                        "Year3": "0.00"
+                      },
+                      {
+                        "@Name": "Other Financial Liabilities",
+                        "Year1": "21094300.00",
+                        "Year2": "18536000.00",
+                        "Year3": "0.00"
+                      },
+                      {
+                        "@Name": "Other current liabilities",
+                        "Year1": "185371400.00",
+                        "Year2": "147551500.00",
+                        "Year3": "0.00"
+                      },
+                      {
+                        "@Name": "Short-term provisions",
+                        "Year1": "67783100.00",
+                        "Year2": "50569600.00",
+                        "Year3": "0.00"
+                      },
+                      {
+                        "@Name": "Current Tax Liabilities (Net)",
+                        "Year1": "2672800.00",
+                        "Year2": "7991400.00",
+                        "Year3": "0.00"
+                      }
+                    ]
+                  },
+                  {
+                    "@name": "TOTAL",
+                    "@Year1": "672038000.00",
+                    "@Year2": "583919800.00",
+                    "@Year3": ""
+                  }
+                ]
+              },
+              {
+                "@name": "ASSETS",
+                "Head": [
+                  {
+                    "@name": "Non-current assets",
+                    "@Year1": "153187600.00",
+                    "@Year2": "133989600.00",
+                    "@Year3": "",
+                    "SubHead": [
+                      {
+                        "@Name": "Fixed Assets",
+                        "Year1": "87193700.00",
+                        "Year2": "92387900.00",
+                        "Year3": "0.00"
+                      },
+                      {
+                        "@Name": "Tangible assets",
+                        "Year1": "57986200.00",
+                        "Year2": "59275800.00",
+                        "Year3": "0.00"
+                      },
+                      {
+                        "@Name": "Capital work-in-progress",
+                        "Year1": "6369000.00",
+                        "Year2": "9491000.00",
+                        "Year3": "0.00"
+                      },
+                      {
+                        "@Name": "Investment Property",
+                        "Year1": "300.00",
+                        "Year2": "300.00",
+                        "Year3": "0.00"
+                      },
+                      {
+                        "@Name": "Goodwill",
+                        "Year1": "0.00",
+                        "Year2": "0.00",
+                        "Year3": "0.00"
+                      },
+                      {
+                        "@Name": "Intangible assets",
+                        "Year1": "10357500.00",
+                        "Year2": "8382700.00",
+                        "Year3": "0.00"
+                      },
+                      {
+                        "@Name": "Intangible assets under development",
+                        "Year1": "12481000.00",
+                        "Year2": "15238400.00",
+                        "Year3": "0.00"
+                      },
+                      {
+                        "@Name": "Equity accounted investees",
+                        "Year1": "1683300.00",
+                        "Year2": "1677900.00",
+                        "Year3": "0.00"
+                      },
+                      {
+                        "@Name": "Non-current investments",
+                        "Year1": "12895900.00",
+                        "Year2": "11949100.00",
+                        "Year3": "0.00"
+                      },
+                      {
+                        "@Name": "Trade & Other Receivables",
+                        "Year1": "0.00",
+                        "Year2": "0.00",
+                        "Year3": "0.00"
+                      },
+                      {
+                        "@Name": "Long-term loans and advances",
+                        "Year1": "62100.00",
+                        "Year2": "69300.00",
+                        "Year3": "0.00"
+                      },
+                      {
+                        "@Name": "Non-current Financial Assets",
+                        "Year1": "4129800.00",
+                        "Year2": "4103000.00",
+                        "Year3": "0.00"
+                      },
+                      {
+                        "@Name": "Deferred tax assets(net)",
+                        "Year1": "11257100.00",
+                        "Year2": "5655700.00",
+                        "Year3": "0.00"
+                      },
+                      {
+                        "@Name": "Other non-current assets",
+                        "Year1": "35965400.00",
+                        "Year2": "18146400.00",
+                        "Year3": "0.00"
+                      }
+                    ]
+                  },
+                  {
+                    "@name": "Current assets",
+                    "@Year1": "518850400.00",
+                    "@Year2": "449930200.00",
+                    "@Year3": "",
+                    "SubHead": [
+                      {
+                        "@Name": "Inventories",
+                        "Year1": "121486900.00",
+                        "Year2": "143472800.00",
+                        "Year3": "0.00"
+                      },
+                      {
+                        "@Name": "Trade receivables",
+                        "Year1": "47190700.00",
+                        "Year2": "46415300.00",
+                        "Year3": "0.00"
+                      },
+                      {
+                        "@Name": "Biological Assets",
+                        "Year1": "93764000.00",
+                        "Year2": "78086500.00",
+                        "Year3": "0.00"
+                      },
+                      {
+                        "@Name": "Cash and cash equivalents",
+                        "Year1": "44407700.00",
+                        "Year2": "30703700.00",
+                        "Year3": "0.00"
+                      },
+                      {
+                        "@Name": "Bank balance other than above",
+                        "Year1": "158758400.00",
+                        "Year2": "112773500.00",
+                        "Year3": "0.00"
+                      },
+                      {
+                        "@Name": "Short-term loans and advances",
+                        "Year1": "77600.00",
+                        "Year2": "75100.00",
+                        "Year3": "0.00"
+                      },
+                      {
+                        "@Name": "Other Current Financial Assets",
+                        "Year1": "11192700.00",
+                        "Year2": "10232300.00",
+                        "Year3": "0.00"
+                      },
+                      {
+                        "@Name": "Current Tax Assets (Net)",
+                        "Year1": "0.00",
+                        "Year2": "0.00",
+                        "Year3": "0.00"
+                      },
+                      {
+                        "@Name": "Other current assets",
+                        "Year1": "41891300.00",
+                        "Year2": "28089900.00",
+                        "Year3": "0.00"
+                      },
+                      {
+                        "@Name": "Assets classified as held for sale",
+                        "Year1": "81100.00",
+                        "Year2": "81100.00",
+                        "Year3": "0.00"
+                      }
+                    ]
+                  },
+                  {
+                    "@name": "TOTAL",
+                    "@Year1": "672038000.00",
+                    "@Year2": "583919800.00",
+                    "@Year3": ""
+                  }
+                ]
+              }
+            ]
+          },
+          "PLNewDataConsolidated": {
+            "@Year1": "31-Mar-2023",
+            "@Year2": "31-Mar-2022",
+            "@Year3": "",
+            "@Narr": "INR  in '000",
+            "Head": [
+              {
+                "@value": "Revenue",
+                "@Year1": "285975800.00",
+                "@Year2": "256049500.00",
+                "@Year3": "",
+                "SubHead": [
+                  {
+                    "@value": "Revenue from operations",
+                    "Year1": "269274600.00",
+                    "Year2": "246200200.00",
+                    "Year3": ""
+                  },
+                  {
+                    "@value": "Other income",
+                    "Year1": "16701200.00",
+                    "Year2": "9849300.00",
+                    "Year3": ""
+                  }
+                ]
+              },
+              {
+                "@value": "Expenses",
+                "@Year1": "232511000.00",
+                "@Year2": "212145800.00",
+                "@Year3": "",
+                "SubHead": [
+                  {
+                    "@value": "Cost of materials consumed",
+                    "Year1": "99936800.00",
+                    "Year2": "87522400.00",
+                    "Year3": ""
+                  },
+                  {
+                    "@value": "Purchase of Stock-in-Trade",
+                    "Year1": "7991500.00",
+                    "Year2": "6566800.00",
+                    "Year3": ""
+                  },
+                  {
+                    "@value": "Changes in inventories of finished goods work-in-progress and Stock-in-Trade",
+                    "Year1": "-6907200.00",
+                    "Year2": "5923000.00",
+                    "Year3": ""
+                  },
+                  {
+                    "@value": "Employee benefits expense",
+                    "Year1": "49103700.00",
+                    "Year2": "46044200.00",
+                    "Year3": ""
+                  },
+                  {
+                    "@value": "Finance Cost",
+                    "Year1": "579700.00",
+                    "Year2": "582000.00",
+                    "Year3": ""
+                  },
+                  {
+                    "@value": "Depreciation and amortization expense",
+                    "Year1": "17846700.00",
+                    "Year2": "11105300.00",
+                    "Year3": ""
+                  },
+                  {
+                    "@value": "Impairment gain / (loss) - net",
+                    "Year1": "5974300.00",
+                    "Year2": "1764300.00",
+                    "Year3": ""
+                  },
+                  {
+                    "@value": "Other expenses",
+                    "Year1": "15605900.00",
+                    "Year2": "12108600.00",
+                    "Year3": ""
+                  },
+                  {
+                    "@value": "Direct Expenses",
+                    "Year1": "5160300.00",
+                    "Year2": "3231500.00",
+                    "Year3": ""
+                  },
+                  {
+                    "@value": "Provisions",
+                    "Year1": "37248000.00",
+                    "Year2": "37295400.00",
+                    "Year3": ""
+                  },
+                  {
+                    "@value": "Share of Profit of Equity Accounted Investees (Net of Income Tax)",
+                    "Year1": "-28700.00",
+                    "Year2": "2300.00",
+                    "Year3": ""
+                  }
+                ]
+              },
+              {
+                "@value": "Profit before exceptional and extraordinary items and tax",
+                "@Year1": "53464800.00",
+                "@Year2": "43903700.00",
+                "@Year3": ""
+              },
+              {
+                "@value": "Exceptional items",
+                "@Year1": "11630200.00",
+                "@Year2": "8341600.00",
+                "@Year3": ""
+              },
+              {
+                "@value": "Profit before extraordinary items and tax",
+                "@Year1": "65095000.00",
+                "@Year2": "52245300.00",
+                "@Year3": ""
+              },
+              {
+                "@value": "Profit (Loss) before tax",
+                "@Year1": "65095000.00",
+                "@Year2": "52245300.00",
+                "@Year3": ""
+              },
+              {
+                "@value": "Tax Expenses",
+                "@Year1": "6817700.00",
+                "@Year2": "1446500.00",
+                "@Year3": "",
+                "SubHead": [
+                  {
+                    "@value": "Current tax",
+                    "Year1": "22500000.00",
+                    "Year2": "19000000.00",
+                    "Year3": ""
+                  },
+                  {
+                    "@value": "Deferred tax",
+                    "Year1": "-5947700.00",
+                    "Year2": "-5626200.00",
+                    "Year3": ""
+                  },
+                  {
+                    "@value": "Income tax for Earlier Years",
+                    "Year1": "-9734600.00",
+                    "Year2": "-11927300.00",
+                    "Year3": ""
+                  }
+                ]
+              },
+              {
+                "@value": "Profit (Loss) for the period from continuing operations",
+                "@Year1": "58277300.00",
+                "@Year2": "50798800.00",
+                "@Year3": ""
+              },
+              {
+                "@value": "Profit (Loss) for the period",
+                "@Year1": "58277300.00",
+                "@Year2": "50798800.00",
+                "@Year3": ""
+              }
+            ]
+          }
+        },
+        "AdditionalInfo": {
+          "ShortTermBorrowings": {
+            "@Year1": "31-Mar-2023",
+            "@Year2": "31-Mar-2022",
+            "@Year3": "31-Mar-2021",
+            "@Narr": "INR  in '000",
+            "Borrowing": [
+              {
+                "HeadName": "From Banks",
+                "IsHeader": "False",
+                "Year1": "0.00",
+                "Year2": "0.00",
+                "Year3": "90700.00"
+              },
+              {
+                "HeadName": "From Banks - Commercial paper",
+                "IsHeader": "False",
+                "Year1": "0.00",
+                "Year2": "0.00",
+                "Year3": "0.00"
+              },
+              {
+                "HeadName": "TOTAL",
+                "IsHeader": "False",
+                "Year1": "0.00",
+                "Year2": "0.00",
+                "Year3": "90700.00"
+              }
+            ]
+          },
+          "AssetLiabDetails": {
+            "@Year1": "31-Mar-2023",
+            "@Year2": "31-Mar-2022",
+            "@Year3": "",
+            "@Narr": "INR  in '000",
+            "@TableHeader": "Cash Flow Statement",
+            "AssetLiabDetailOtherDetails": {
+              "Currency": "INR",
+              "Units": "Thousands",
+              "TypeOfFinancial": "Standalone",
+              "PeriodYear1": "12 months",
+              "PeriodYear2": "12 months",
+              "PeriodYear3": "",
+              "AccountTypeYear1": "Audited",
+              "AccountTypeYear2": "Audited",
+              "AccountTypeYear3": "",
+              "SourceYear1": "Registry",
+              "SourceYear2": "Registry",
+              "SourceYear3": ""
+            },
+            "AssetLiabStateHead": [
+              {
+                "HeadName": "Profit After Tax",
+                "Year1": "58111700.00",
+                "Year2": "50865000.00",
+                "Year3": ""
+              },
+              {
+                "HeadName": "Adjustments to reconcile net profit to net cash provided by operating activities",
+                "Year1": "",
+                "Year2": "",
+                "Year3": ""
+              },
+              {
+                "HeadName": "Income Tax expense",
+                "Year1": "6817700.00",
+                "Year2": "1446500.00",
+                "Year3": ""
+              },
+              {
+                "HeadName": "(Gain)/Loss on sale of Property, Plant & Equipment",
+                "Year1": "-31800.00",
+                "Year2": "-15700.00",
+                "Year3": ""
+              },
+              {
+                "HeadName": "Finance cost",
+                "Year1": "257600.00",
+                "Year2": "558000.00",
+                "Year3": ""
+              },
+              {
+                "HeadName": "Interest Income",
+                "Year1": "-14983600.00",
+                "Year2": "-6871100.00",
+                "Year3": ""
+              },
+              {
+                "HeadName": "Dividend Income",
+                "Year1": "-24000.00",
+                "Year2": "-19600.00",
+                "Year3": ""
+              },
+              {
+                "HeadName": "Net (Gain)/Loss on Fair Value Adjustment",
+                "Year1": "-29100.00",
+                "Year2": "31300.00",
+                "Year3": ""
+              },
+              {
+                "HeadName": "Other Adjustments",
+                "Year1": "-2100.00",
+                "Year2": "",
+                "Year3": ""
+              },
+              {
+                "HeadName": "Depreciation,amortization and impairment expense",
+                "Year1": "23813400.00",
+                "Year2": "12863000.00",
+                "Year3": ""
+              },
+              {
+                "HeadName": "Provision for Impairment in Value of Investments",
+                "Year1": "149100.00",
+                "Year2": "55700.00",
+                "Year3": ""
+              },
+              {
+                "HeadName": "Provision for Doubtful Debts",
+                "Year1": "1041600.00",
+                "Year2": "10556800.00",
+                "Year3": ""
+              },
+              {
+                "HeadName": "Provision for Doubtful Claims",
+                "Year1": "297400.00",
+                "Year2": "712000.00",
+                "Year3": ""
+              },
+              {
+                "HeadName": "Provision for Replacement and Other charges",
+                "Year1": "24505200.00",
+                "Year2": "7872900.00",
+                "Year3": ""
+              },
+              {
+                "HeadName": "Provision for Warranty",
+                "Year1": "4390100.00",
+                "Year2": "5154400.00",
+                "Year3": ""
+              },
+              {
+                "HeadName": "Provision for Raw Materials and Components, Stores and Spare parts, Loose",
+                "Year1": "2814000.00",
+                "Year2": "5600500.00",
+                "Year3": ""
+              },
+              {
+                "HeadName": "Tools and Equipment, Construction Materials, Work-in-progress and Inventory Warranty",
+                "Year1": "",
+                "Year2": "",
+                "Year3": ""
+              },
+              {
+                "HeadName": "Provision for Liquidated Damages",
+                "Year1": "4229000.00",
+                "Year2": "7439500.00",
+                "Year3": ""
+              },
+              {
+                "HeadName": "Operating Profit Before Working Capital Changes",
+                "Year1": "111356200.00",
+                "Year2": "96249200.00",
+                "Year3": ""
+              },
+              {
+                "HeadName": "Adjustments for:",
+                "Year1": "",
+                "Year2": "",
+                "Year3": ""
+              },
+              {
+                "HeadName": "(Increase)/decrease in Trade Receivables",
+                "Year1": "-17494300.00",
+                "Year2": "6113500.00",
+                "Year3": ""
+              },
+              {
+                "HeadName": "(Increase)/decrease in Loans, Financial Assets and Other Assets",
+                "Year1": "-16264700.00",
+                "Year2": "-13539000.00",
+                "Year3": ""
+              },
+              {
+                "HeadName": "(Increase)/decrease in Inventories",
+                "Year1": "19215100.00",
+                "Year2": "17649300.00",
+                "Year3": ""
+              },
+              {
+                "HeadName": "Increase/(decrease) in Trade Payables",
+                "Year1": "5775700.00",
+                "Year2": "2990400.00",
+                "Year3": ""
+              },
+              {
+                "HeadName": "Increase/(decrease) in Financial Liabilities, Provisions and Other Liabilities",
+                "Year1": "13324000.00",
+                "Year2": "2615400.00",
+                "Year3": ""
+              },
+              {
+                "HeadName": "Cash generated from Operations",
+                "Year1": "115912000.00",
+                "Year2": "112078800.00",
+                "Year3": ""
+              },
+              {
+                "HeadName": "Income Taxes Paid",
+                "Year1": "-27557000.00",
+                "Year2": "-10274500.00",
+                "Year3": ""
+              },
+              {
+                "HeadName": "Net Cash (used in)/generated from Operating Activities (A)",
+                "Year1": "88355000.00",
+                "Year2": "101804300.00",
+                "Year3": ""
+              },
+              {
+                "HeadName": "Cash flow from Investing activities",
+                "Year1": "",
+                "Year2": "",
+                "Year3": ""
+              },
+              {
+                "HeadName": "Purchase of Property, Plant & Equipment",
+                "Year1": "-7823400.00",
+                "Year2": "-7989200.00",
+                "Year3": ""
+              },
+              {
+                "HeadName": "Purchase of Intangible Assets",
+                "Year1": "-9987900.00",
+                "Year2": "-7012700.00",
+                "Year3": ""
+              },
+              {
+                "HeadName": "Proceeds from sale of Property, Plant & Equipment",
+                "Year1": "50600.00",
+                "Year2": "31700.00",
+                "Year3": ""
+              },
+              {
+                "HeadName": "Investment in Joint Ventures",
+                "Year1": "-150000.00",
+                "Year2": "-100000.00",
+                "Year3": ""
+              },
+              {
+                "HeadName": "Investment in Subsidiary",
+                "Year1": "-911600.00",
+                "Year2": "-2347600.00",
+                "Year3": ""
+              },
+              {
+                "HeadName": "Purchase of other non current Investments",
+                "Year1": "-45926800.00",
+                "Year2": "-112496200.00",
+                "Year3": ""
+              },
+              {
+                "HeadName": "Investment in short term deposits",
+                "Year1": "7381700.00",
+                "Year2": "2003500.00",
+                "Year3": ""
+              },
+              {
+                "HeadName": "Interest Received",
+                "Year1": "24000.00",
+                "Year2": "19600.00",
+                "Year3": ""
+              },
+              {
+                "HeadName": "Dividend Received from Joint Ventures",
+                "Year1": "-57343400.00",
+                "Year2": "-127890900.00",
+                "Year3": ""
+              },
+              {
+                "HeadName": "Net Cash (used in)/generated from Investing Activities (B)",
+                "Year1": "",
+                "Year2": "",
+                "Year3": ""
+              },
+              {
+                "HeadName": "C Cash flow from Financing Activities",
+                "Year1": "",
+                "Year2": "",
+                "Year3": ""
+              },
+              {
+                "HeadName": "Repayment of Borrowings-Current (Net)",
+                "Year1": "",
+                "Year2": "-90700.00",
+                "Year3": ""
+              },
+              {
+                "HeadName": "Payment of Lease Liabilities",
+                "Year1": "-36800.00",
+                "Year2": "-700.00",
+                "Year3": ""
+              },
+              {
+                "HeadName": "Interest paid",
+                "Year1": "-556800.00",
+                "Year2": "-1169900.00",
+                "Year3": ""
+              },
+              {
+                "HeadName": "Dividend Paid",
+                "Year1": "16719400.00",
+                "Year2": "13375500.00",
+                "Year3": ""
+              },
+              {
+                "HeadName": "Net Cash (used in)/generated from Financing Activities (C)",
+                "Year1": "17313000.00",
+                "Year2": "14636800.00",
+                "Year3": ""
+              },
+              {
+                "HeadName": "Net increase/(decrease) in Cash and Cash Equivalents (A+B+C)",
+                "Year1": "13698600.00",
+                "Year2": "-40723400.00",
+                "Year3": ""
+              },
+              {
+                "HeadName": "Add: Cash and Cash Equivalents at the beginning of the year (Refer Note 16)",
+                "Year1": "30691400.00",
+                "Year2": "71414800.00",
+                "Year3": ""
+              },
+              {
+                "HeadName": "Cash and Cash Equivalents at the end of the year (Refer Note 16)",
+                "Year1": "44390000.00",
+                "Year2": "30691400.00",
+                "Year3": ""
+              }
+            ]
+          },
+          "AssetDetails": {
+            "@AsOn": "31-Mar-2023",
+            "@Unit": "INR  in '000",
+            "Asset": [
+              "Property, Plant and Equipment",
+              "Capital Work in Progress",
+              "TOTAL"
+            ],
+            "AssetValue": [
+              "57915600.00",
+              "6358100.00",
+              "64273700.00"
+            ]
+          },
+          "FlexiDetails": {
+            "@Unit": "INR  in '000",
+            "@TableHeader": "Other Current Liabilities",
+            "@Year1": "31-Mar-2023",
+            "@Year2": "31-Mar-2022",
+            "@Year3": "31-Mar-2021",
+            "FlexiHead": [
+              {
+                "Head": "Advances from Customers",
+                "Year1": "55398100.00",
+                "Year2": "143998100.00",
+                "Year3": "166104800.00"
+              },
+              {
+                "Head": "Taxes ( Other than Taxes on Income)",
+                "Year1": "125152700.00",
+                "Year2": "1163400.00",
+                "Year3": "595400.00"
+              },
+              {
+                "Head": "Gst Payable",
+                "Year1": "1763200.00",
+                "Year2": "718100.00",
+                "Year3": "711100.00"
+              },
+              {
+                "Head": "Others",
+                "Year1": "3052700.00",
+                "Year2": "1668800.00",
+                "Year3": "1526800.00"
+              },
+              {
+                "Head": "TOTAL",
+                "Year1": "185366700",
+                "Year2": "147548400",
+                "Year3": "168938100"
+              }
+            ]
+          }
+        },
+        "PreviousRegistrationNo": {
+          "PreviousRegDetails": {
+            "RegistrationNo": "",
+            "DateOfChange": ""
+          }
+        }
+      }
+    }
+  }

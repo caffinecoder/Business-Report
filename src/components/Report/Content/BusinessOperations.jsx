@@ -2,7 +2,7 @@ import React from "react";
 import Table from "@mui/joy/Table";
 const BusinessOperations = () => {
   return (
-    <div className="rounded-lg overflow-hidden border border-gray-300 mt-5">
+    <div className=" overflow-hidden border  mt-5">
       <div className="bg-[#1a3d73] py-2 px-2">
         <h2 className="text-lg font-semibold uppercase">Business Operations</h2>
       </div>
@@ -16,7 +16,7 @@ const BusinessOperations = () => {
         }}
       >
         <tbody>
-          <td>
+          <td style={{border: '1px solid #333'}}>
             <p>
               Hindustan Aeronautics Limited (HAL), was incorporated in 1963 by
               amalgamation of Hindustan Aircraft Limited and Aeronautics India
