@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { leftTdItem, rightTdItem } from "./TableData";
 import Table from "@mui/joy/Table";
-import DataContext from "../../context/DataProvider";
+import { DataContext } from "../../context/DataProvider";
 const BasicDetails = () => {
   const { data, loading, error } = useContext(DataContext);
   if (loading) {

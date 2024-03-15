@@ -1,10 +1,8 @@
-import React from "react";
-import { useContext } from "react";
-import { useEffect } from "react";
-import { useState } from "react";
+import React, { createContext, useEffect, useState } from "react";
 import { fetchData } from "../data/fetchJsonData";
-import { createContext } from "react";
-const DataContext = createContext();
+
+export const DataContext = createContext();
+
 const DataProvider = ({ children }) => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
