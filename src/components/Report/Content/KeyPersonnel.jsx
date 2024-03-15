@@ -1,82 +1,75 @@
-import React from "react";
-import { personnelInfo } from "./TableData";
+import React, { useContext } from "react";
 import Table from "@mui/joy/Table";
+import { DataContext } from "../../context/DataProvider";
+
 const KeyPersonnel = () => {
+  const { data, loading, error } = useContext(DataContext);
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div>Error: {error.message}</div>;
+  }
+
+  const executives = data?.orderResult?.UCS?.ChiefExecutive?.KeyExecutive;
+
+  if (!executives || executives.length === 0) {
+    return <div>No key personnel found</div>;
+  }
+
+  // Function to format key with spaces between camel case words
+  const formatKey = (key) => {
+    return key
+      .replace(/([a-z])([A-Z])/g, "$1 $2") // Add space between camel case words
+      .replace(/_/g, " "); // Replace underscores with spaces
+  };
+
   return (
-    <div className=" overflow-hidden border  mt-5">
+    <div className="overflow-hidden border mt-5">
       <div className="bg-[#1a3d73] py-2 px-2">
         <h2 className="text-lg font-semibold uppercase">Key Personnel</h2>
       </div>
-      <Table
-        borderAxis="both"
-        stripe="odd"
-        hoverRow
-        sx={{
-          captionSide: "top",
-          "& tbody": { bgcolor: "background.surface" },
-        }}
-      >
+      <Table borderAxis="both">
         <thead>
           <tr>
-            <th
-              style={{
-                color: "#000",
-                fontWeight: "600",
-                fontSize: "1rem",
-              }}
-            >
-              Name
-            </th>
-            <th
-              style={{
-                color: "#000",
-                fontWeight: "600",
-                fontSize: "1rem",
-              }}
-            >
-              Designation
-            </th>
-            <th
-              style={{
-                color: "#000",
-                fontWeight: "600",
-                fontSize: "1rem",
-              }}
-            >
-              Date of Joining
-            </th>
+            {Object.entries(executives[0]).map(
+              ([key, value]) =>
+                key &&
+                value && (
+                  <th
+                    key={key}
+                    style={{
+                      color: "#000",
+                      fontWeight: "600",
+                      fontSize: "1rem",
+                    }}
+                  >
+                    {formatKey(key)}
+                  </th>
+                )
+            )}
           </tr>
         </thead>
         <tbody>
-          {personnelInfo.map((item, idx) => (
+          {executives.map((executive, idx) => (
             <tr key={idx}>
-              <td
-                style={{
-                  color: "#000",
-                  fontWeight: "500",
-                  fontSize: "1rem",
-                }}
-              >
-                {item.name}
-              </td>
-              <td
-                style={{
-                  color: "#000",
-                  fontWeight: "500",
-                  fontSize: "1rem",
-                }}
-              >
-                {item.designation}
-              </td>
-              <td
-                style={{
-                  color: "#000",
-                  fontWeight: "500",
-                  fontSize: "1rem",
-                }}
-              >
-                {item.joining}
-              </td>
+              {Object.values(executive).map(
+                (value, idx) =>
+                  value && (
+                    <td
+                      key={idx}
+                      style={{
+                        color: "#000",
+                        fontWeight: "500",
+                        fontSize: "1rem",
+                      }}
+                    >
+                      {value}
+                    </td>
+                  )
+              )}
             </tr>
           ))}
         </tbody>

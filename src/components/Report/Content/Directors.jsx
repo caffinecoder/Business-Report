@@ -1,7 +1,26 @@
-import React from "react";
+import React, { useContext } from "react";
 import Table from "@mui/joy/Table";
-import { directorsInfo } from "./TableData";
+import { DataContext } from "../../context/DataProvider";
 const Directors = () => {
+  const { data, loading, error } = useContext(DataContext);
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div>Error: {error.message}</div>;
+  }
+  const directors = data?.orderResult?.UCS?.Directors?.Director;
+
+  if (!directors || directors.length === 0) {
+    return <div>No directors found</div>;
+  }
+  const formatKey = (key) => {
+    return key
+      .replace(/([a-z])([A-Z])/g, "$1 $2") // Add space between camel case words
+      .replace(/_/g, " "); // Replace underscores with spaces
+  };
   return (
     <div className=" overflow-hidden border  mt-5">
       <div className="bg-[#1a3d73] py-2 px-2">
@@ -20,83 +39,42 @@ const Directors = () => {
       >
         <thead>
           <tr>
-            <th
-              style={{
-                color: "#000",
-                fontWeight: "600",
-                fontSize: "1rem",
-              }}
-            >
-              Name
-            </th>
-            <th
-              style={{
-                color: "#000",
-                fontWeight: "600",
-                fontSize: "1rem",
-              }}
-            >
-              Designation
-            </th>
-            <th
-              style={{
-                color: "#000",
-                fontWeight: "600",
-                fontSize: "1rem",
-              }}
-            >
-              Date of Joining
-            </th>
-            <th
-              style={{
-                color: "#000",
-                fontWeight: "600",
-                fontSize: "1rem",
-              }}
-            >
-              DIN
-            </th>
+            {Object.entries(directors[0]).map(
+              ([key, value]) =>
+                key &&
+                value && (
+                  <th
+                    key={key}
+                    style={{
+                      color: "#000",
+                      fontWeight: "600",
+                      fontSize: "1rem",
+                    }}
+                  >
+                    {formatKey(key)}
+                  </th>
+                )
+            )}
           </tr>
         </thead>
         <tbody>
-          {directorsInfo.map((item, idx) => (
-            <tr key={idx}>
-              <td
-                style={{
-                  color: "#000",
-                  fontWeight: "500",
-                  fontSize: "1rem",
-                }}
-              >
-                {item.name}
-              </td>
-              <td
-                style={{
-                  color: "#000",
-                  fontWeight: "500",
-                  fontSize: "1rem",
-                }}
-              >
-                {item.designation}
-              </td>
-              <td
-                style={{
-                  color: "#000",
-                  fontWeight: "500",
-                  fontSize: "1rem",
-                }}
-              >
-                {item.joining}
-              </td>
-              <td
-                style={{
-                  color: "#000",
-                  fontWeight: "500",
-                  fontSize: "1rem",
-                }}
-              >
-                {item.din}
-              </td>
+          {directors.map((director, index) => (
+            <tr key={index}>
+              {Object.values(director).map(
+                (value, idx) =>
+                  value && (
+                    <td
+                      key={idx}
+                      style={{
+                        color: "#000",
+                        fontWeight: "500",
+                        fontSize: "1rem",
+                      }}
+                    >
+                      {value}
+                    </td>
+                  )
+              )}
             </tr>
           ))}
         </tbody>
