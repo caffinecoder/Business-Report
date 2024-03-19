@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Table } from "@mui/joy";
-import { CurrentLibData } from "./TableData";
+import { DataContext } from "../../context/DataProvider";
 const CurrentLiabilities = () => {
+  const { data, loading, error } = useContext(DataContext);
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div>Error: {error.message}</div>;
+  }
+  const currentLiab = data?.orderResult?.UCS?.AdditionalInfo?.FlexiDetails;
   return (
     <div className=" overflow-hidden border  mt-5">
       <div className="bg-[#1a3d73] py-2 px-2">
         <h2 className="text-lg font-semibold uppercase">
-          Other Current Liabilities
+          {currentLiab["@TableHeader"]}
         </h2>
       </div>
       <Table
@@ -20,66 +30,59 @@ const CurrentLiabilities = () => {
       >
         <thead>
           <tr>
-            <th>For the Year Ending</th>
-            <th>31-Mar-2023</th>
-            <th>31-Mar-2022</th>
-            <th>31-Mar-2021</th>
+            <th
+              style={{
+                color: "#000",
+                fontWeight: "600",
+                fontSize: "1rem",
+              }}
+            >
+              For the Year Ending
+            </th>
+            <th
+              style={{
+                color: "#000",
+                fontWeight: "600",
+                fontSize: "1rem",
+              }}
+            >
+              {currentLiab["@Year1"]}
+            </th>
+            <th
+              style={{
+                color: "#000",
+                fontWeight: "600",
+                fontSize: "1rem",
+              }}
+            >
+              {currentLiab["@Year2"]}
+            </th>
+            <th
+              style={{
+                color: "#000",
+                fontWeight: "600",
+                fontSize: "1rem",
+              }}
+            >
+              {currentLiab["@Year3"]}
+            </th>
           </tr>
         </thead>
         <tbody>
-          {CurrentLibData.map((item, idx) => (
-            <tr key={idx}>
-              {item.label === "TOTAL" ? (
-                <>
-                  <th
-                    style={{
-                      color: "#000",
-                      fontWeight: "600",
-                      fontSize: "1rem",
-                    }}
-                  >
-                    {item.label}
-                  </th>
-                  <th
-                    style={{
-                      color: "#000",
-                      fontWeight: "600",
-                      fontSize: "1rem",
-                    }}
-                  >
-                    {item.year2023}
-                  </th>
-                  <th
-                    style={{
-                      color: "#000",
-                      fontWeight: "600",
-                      fontSize: "1rem",
-                    }}
-                  >
-                    {item.year2022}
-                  </th>
-                  <th
-                    style={{
-                      color: "#000",
-                      fontWeight: "600",
-                      fontSize: "1rem",
-                    }}
-                  >
-                    {item.year2021}
-                  </th>
-                </>
-              ) : (
-                <>
+          {currentLiab.FlexiHead.map((FlexiHead, idx) => (
+            <React.Fragment key={idx}>
+              <tr>
+                {FlexiHead["Head"] === "TOTAL" ? (
                   <td
                     style={{
-                      width: "30%",
                       color: "#000",
-                      fontWeight: "500",
+                      fontWeight: "600",
                       fontSize: "1rem",
                     }}
                   >
-                    {item.label}
+                    {FlexiHead["Head"]}
                   </td>
+                ) : (
                   <td
                     style={{
                       color: "#000",
@@ -87,29 +90,38 @@ const CurrentLiabilities = () => {
                       fontSize: "1rem",
                     }}
                   >
-                    {item.year2023}
+                    {FlexiHead["Head"]}
                   </td>
-                  <td
-                    style={{
-                      color: "#000",
-                      fontWeight: "500",
-                      fontSize: "1rem",
-                    }}
-                  >
-                    {item.year2022}
-                  </td>
-                  <td
-                    style={{
-                      color: "#000",
-                      fontWeight: "500",
-                      fontSize: "1rem",
-                    }}
-                  >
-                    {item.year2021}
-                  </td>
-                </>
-              )}
-            </tr>
+                )}
+                <td
+                  style={{
+                    color: "#000",
+                    fontWeight: "500",
+                    fontSize: "1rem",
+                  }}
+                >
+                  {FlexiHead["Year1"]}
+                </td>
+                <td
+                  style={{
+                    color: "#000",
+                    fontWeight: "500",
+                    fontSize: "1rem",
+                  }}
+                >
+                  {FlexiHead["Year2"]}
+                </td>
+                <td
+                  style={{
+                    color: "#000",
+                    fontWeight: "500",
+                    fontSize: "1rem",
+                  }}
+                >
+                  {FlexiHead["Year3"]}
+                </td>
+              </tr>
+            </React.Fragment>
           ))}
         </tbody>
       </Table>

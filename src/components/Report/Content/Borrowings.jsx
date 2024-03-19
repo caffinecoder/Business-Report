@@ -1,7 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Table } from "@mui/joy";
 import { BorrowingData } from "./TableData";
+import { DataContext } from "../../context/DataProvider";
 const Borrowings = () => {
+  const { data, loading, error } = useContext(DataContext);
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div>Error: {error.message}</div>;
+  }
+  const shortTermBorrow =
+    data?.orderResult?.UCS?.AdditionalInfo?.ShortTermBorrowings;
   return (
     <div className=" overflow-hidden border  mt-5">
       <div className="bg-[#1a3d73] py-2 px-2">
@@ -36,7 +48,7 @@ const Borrowings = () => {
                 fontSize: "1rem",
               }}
             >
-              31-Mar-2023
+              {shortTermBorrow["@Year1"]}
             </th>
             <th
               style={{
@@ -45,7 +57,7 @@ const Borrowings = () => {
                 fontSize: "1rem",
               }}
             >
-              31-Mar-2022
+              {shortTermBorrow["@Year2"]}
             </th>
             <th
               style={{
@@ -54,94 +66,52 @@ const Borrowings = () => {
                 fontSize: "1rem",
               }}
             >
-              31-Mar-2021
+              {shortTermBorrow["@Year3"]}
             </th>
           </tr>
         </thead>
         <tbody>
-          {BorrowingData.map((item, idx) => (
-            <tr key={idx}>
-              {item.label === "TOTAL" ? (
-                <>
-                  <th
-                    style={{
-                      color: "#000",
-                      fontWeight: "600",
-                      fontSize: "1rem",
-                    }}
-                  >
-                    {item.label}
-                  </th>
-                  <th
-                    style={{
-                      color: "#000",
-                      fontWeight: "600",
-                      fontSize: "1rem",
-                    }}
-                  >
-                    {item.year2023}
-                  </th>
-                  <th
-                    style={{
-                      color: "#000",
-                      fontWeight: "600",
-                      fontSize: "1rem",
-                    }}
-                  >
-                    {item.year2022}
-                  </th>
-                  <th
-                    style={{
-                      color: "#000",
-                      fontWeight: "600",
-                      fontSize: "1rem",
-                    }}
-                  >
-                    {item.year2021}
-                  </th>
-                </>
-              ) : (
-                <>
-                  <td
-                    style={{
-                      width: "30%",
-                      color: "#000",
-                      fontWeight: "500",
-                      fontSize: "1rem",
-                    }}
-                  >
-                    {item.label}
-                  </td>
-                  <td
-                    style={{
-                      color: "#000",
-                      fontWeight: "500",
-                      fontSize: "1rem",
-                    }}
-                  >
-                    {item.year2023}
-                  </td>
-                  <td
-                    style={{
-                      color: "#000",
-                      fontWeight: "500",
-                      fontSize: "1rem",
-                    }}
-                  >
-                    {item.year2022}
-                  </td>
-                  <td
-                    style={{
-                      color: "#000",
-                      fontWeight: "500",
-                      fontSize: "1rem",
-                    }}
-                  >
-                    {item.year2021}
-                  </td>
-                </>
-              )}
-            </tr>
+          {shortTermBorrow.Borrowing.map((Borrowing, idx) => (
+            <React.Fragment key={idx}>
+              <tr>
+                <td
+                  style={{
+                    color: "#000",
+                    fontWeight: "600",
+                    fontSize: "1rem",
+                  }}
+                >
+                  {Borrowing["HeadName"]}
+                </td>
+                <td
+                  style={{
+                    color: "#000",
+                    fontWeight: "500",
+                    fontSize: "1rem",
+                  }}
+                >
+                  {Borrowing["Year1"]}
+                </td>
+                <td
+                  style={{
+                    color: "#000",
+                    fontWeight: "500",
+                    fontSize: "1rem",
+                  }}
+                >
+                  {Borrowing["Year2"]}
+                </td>
+                <td
+                  style={{
+                    color: "#000",
+                    fontWeight: "500",
+                    fontSize: "1rem",
+                  }}
+                >
+                  {Borrowing["Year3"]}
+                </td>
+              </tr>
+            </React.Fragment>
           ))}
         </tbody>
       </Table>

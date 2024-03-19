@@ -1,7 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
 import Table from "@mui/joy/Table";
 import { ProfitLossData } from "./TableData";
+import { DataContext } from "../../context/DataProvider";
 const ProfitLoss = () => {
+  const { data, loading, error } = useContext(DataContext);
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div>Error: {error.message}</div>;
+  }
+  const profitLossData =
+    data?.orderResult?.UCS?.FinancialStatementConsolidated
+      ?.PLNewDataConsolidated;
   return (
     <div className=" overflow-hidden border  mt-5">
       <div className="bg-[#1a3d73] py-2 px-2">
@@ -34,7 +47,7 @@ const ProfitLoss = () => {
                 fontSize: "1rem",
               }}
             >
-              31-Mar-2023
+              {profitLossData["@Year1"]}
             </th>
             <th
               style={{
@@ -43,85 +56,53 @@ const ProfitLoss = () => {
                 fontSize: "1rem",
               }}
             >
-              31-Mar-2022
+              {profitLossData["@Year2"]}
             </th>
-            <th
-              style={{
-                color: "#000",
-                fontWeight: "600",
-                fontSize: "1rem",
-              }}
-            >
-              31-Mar-2021
-            </th>
+            {profitLossData["@Year3"] && (
+              <th
+                style={{
+                  color: "#000",
+                  fontWeight: "600",
+                  fontSize: "1rem",
+                }}
+              >
+                {profitLossData["@Year3"]}
+              </th>
+            )}
           </tr>
         </thead>
         <tbody>
-          {ProfitLossData.map((item, idx) => (
-            <tr key={idx}>
-              {item.label === "Revenue" ||
-              item.label === "Expenses" ||
-              item.label ===
-                "Profit before exceptional and extraordinary items and tax" ||
-              item.label === "Exceptional items" ||
-              item.label === "Profit before extraordinary items and tax" ||
-              item.label === "Profit (Loss) before tax" ||
-              item.label === "Tax Expenses" ||
-              item.label ===
-                "Profit (Loss) for the period from continuing operations" ||
-              item.label === "Profit (Loss) for the period" ||
-              item.label === "Earnings per equity share:Basic" ||
-              item.label === "Earnings per equity share:Diluted" ? (
-                <>
-                  <td
-                    style={{
-                      color: "#000",
-                      fontWeight: "600",
-                      fontSize: "1rem",
-                    }}
-                  >
-                    {item.label}
-                  </td>
-                  <td
-                    style={{
-                      color: "#000",
-                      fontWeight: "600",
-                      fontSize: "1rem",
-                    }}
-                  >
-                    {item.year2023}
-                  </td>
-                  <td
-                    style={{
-                      color: "#000",
-                      fontWeight: "600",
-                      fontSize: "1rem",
-                    }}
-                  >
-                    {item.year2022}
-                  </td>
-                  <td
-                    style={{
-                      color: "#000",
-                      fontWeight: "600",
-                      fontSize: "1rem",
-                    }}
-                  >
-                    {item.year2021}
-                  </td>
-                </>
-              ) : (
-                <>
-                  <td
-                    style={{
-                      width: "30%",
-                      color: "#000",
-                      fontWeight: "500",
-                      fontSize: "1rem",
-                    }}
-                  >
-                    {item.label}
-                  </td>
+          {profitLossData.Head.map((Head, idx) => (
+            <React.Fragment key={idx}>
+              <tr>
+                <th
+                  style={{
+                    color: "#000",
+                    fontWeight: "600",
+                    fontSize: "1rem",
+                  }}
+                >
+                  {Head["@value"]}
+                </th>
+                <td
+                  style={{
+                    color: "#000",
+                    fontWeight: "500",
+                    fontSize: "1rem",
+                  }}
+                >
+                  {Head["@Year1"]}
+                </td>
+                <td
+                  style={{
+                    color: "#000",
+                    fontWeight: "500",
+                    fontSize: "1rem",
+                  }}
+                >
+                  {Head["@Year2"]}
+                </td>
+                {Head["@Year3"] && (
                   <td
                     style={{
                       color: "#000",
@@ -129,29 +110,54 @@ const ProfitLoss = () => {
                       fontSize: "1rem",
                     }}
                   >
-                    {item.year2023}
+                    {Head["@Year3"]}
                   </td>
-                  <td
-                    style={{
-                      color: "#000",
-                      fontWeight: "500",
-                      fontSize: "1rem",
-                    }}
-                  >
-                    {item.year2022}
-                  </td>
-                  <td
-                    style={{
-                      color: "#000",
-                      fontWeight: "500",
-                      fontSize: "1rem",
-                    }}
-                  >
-                    {item.year2021}
-                  </td>
-                </>
-              )}
-            </tr>
+                )}
+              </tr>
+              {Head.SubHead &&
+                Head.SubHead.map((SubHead, idx) => (
+                  <tr key={idx}>
+                    <td
+                      style={{
+                        color: "#000",
+                        fontWeight: "500",
+                        fontSize: "1rem",
+                      }}
+                    >
+                      {SubHead["@value"]}
+                    </td>
+                    <td
+                      style={{
+                        color: "#000",
+                        fontWeight: "500",
+                        fontSize: "1rem",
+                      }}
+                    >
+                      {SubHead["Year1"]}
+                    </td>
+                    <td
+                      style={{
+                        color: "#000",
+                        fontWeight: "500",
+                        fontSize: "1rem",
+                      }}
+                    >
+                      {SubHead["Year2"]}
+                    </td>
+                    {SubHead["@Year3"] && (
+                      <td
+                        style={{
+                          color: "#000",
+                          fontWeight: "500",
+                          fontSize: "1rem",
+                        }}
+                      >
+                        {SubHead["@Year3"]}
+                      </td>
+                    )}
+                  </tr>
+                ))}
+            </React.Fragment>
           ))}
         </tbody>
       </Table>

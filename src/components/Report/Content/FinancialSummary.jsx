@@ -41,45 +41,137 @@ const FinancialSummary = () => {
           "& tbody": { bgcolor: "background.surface" },
         }}
       >
-        <tbody>
-          {finHead.map((head, idx) => (
-            <>
-              <tr key={idx}>
-                <td>{financialSummary["@Year1"]}</td>
-                <td>{head.Year1}</td>
-                <td>
-                  {head.Year1
-                    ? head.Year1.includes("%")
-                      ? ""
-                      : `${head.Year1}%`
-                    : ""}
-                </td>
-              </tr>
-              <tr key={`${idx}-variation`}>
-                <td>{financialSummary["@Year2"]}</td>
-                <td>{head.Year2}</td>
-                <td>
-                  {head.Year2
-                    ? head.Year2.includes("%")
-                      ? ""
-                      : `${head.Year2}%`
-                    : ""}
-                </td>
-              </tr>
-              <tr key={`${idx}-variation`}>
-                <td>{financialSummary["@Year3"]}</td>
-                <td>{head.Year3}</td>
-                <td>
-                  {head.Year3
-                    ? head.Year3.includes("%")
-                      ? ""
-                      : `${head.Year3}%`
-                    : ""}
-                </td>
-              </tr>
-            </>
-          ))}
-        </tbody>
+        <thead>
+          <tr>
+            <th
+              style={{
+                color: "#000",
+                fontWeight: "600",
+                fontSize: "1rem",
+              }}
+            >
+              Year Ended
+            </th>
+            <th
+              style={{
+                color: "#000",
+                fontWeight: "600",
+                fontSize: "1rem",
+              }}
+            >
+              Amount
+            </th>
+            <th
+              style={{
+                color: "#000",
+                fontWeight: "600",
+                fontSize: "1rem",
+              }}
+            >
+              Change
+            </th>
+          </tr>
+        </thead>
+        {finHead.map((head, idx) => {
+          if (head.HeadName === "Net Worth") {
+            const variation = finHead.find(
+              (item) => item.HeadName === "Variation"
+            );
+            const variationYear = variation ? variation : "---";
+            return (
+              <tbody key={idx}>
+                <tr>
+                  <td
+                    style={{
+                      color: "#000",
+                      fontWeight: "500",
+                      fontSize: "1rem",
+                    }}
+                  >
+                    {financialSummary["@Year1"]}
+                  </td>
+                  <td
+                    style={{
+                      color: "#000",
+                      fontWeight: "500",
+                      fontSize: "1rem",
+                    }}
+                  >
+                    {head.Year1}
+                  </td>
+                  <td
+                    style={{
+                      color: "#000",
+                      fontWeight: "500",
+                      fontSize: "1rem",
+                    }}
+                  >
+                    {variationYear?.Year1}
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    style={{
+                      color: "#000",
+                      fontWeight: "500",
+                      fontSize: "1rem",
+                    }}
+                  >
+                    {financialSummary["@Year2"]}
+                  </td>
+                  <td
+                    style={{
+                      color: "#000",
+                      fontWeight: "500",
+                      fontSize: "1rem",
+                    }}
+                  >
+                    {head.Year2}
+                  </td>
+                  <td
+                    style={{
+                      color: "#000",
+                      fontWeight: "500",
+                      fontSize: "1rem",
+                    }}
+                  >
+                    {variationYear?.Year2}
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    style={{
+                      color: "#000",
+                      fontWeight: "500",
+                      fontSize: "1rem",
+                    }}
+                  >
+                    {financialSummary["@Year3"]}
+                  </td>
+                  <td
+                    style={{
+                      color: "#000",
+                      fontWeight: "500",
+                      fontSize: "1rem",
+                    }}
+                  >
+                    {head.Year3}
+                  </td>
+                  <td
+                    style={{
+                      color: "#000",
+                      fontWeight: "500",
+                      fontSize: "1rem",
+                    }}
+                  >
+                    {variationYear?.Year3 ? variationYear.Year3 : "---"}
+                  </td>
+                </tr>
+              </tbody>
+            );
+          }
+          return null; // Render nothing if HeadName is not "Net Worth"
+        })}
       </Table>
       <div>
         <p className="font-semibold text-lg capitalize py-1 px-2">
@@ -125,39 +217,107 @@ const FinancialSummary = () => {
               </th>
             </tr>
           </thead>
-          <tbody>
-            {FinancialData.map((item, idx) => (
-              <tr key={idx}>
-                <td
-                  style={{
-                    color: "#000",
-                    fontWeight: "500",
-                    fontSize: "1rem",
-                  }}
-                >
-                  {item.years}
-                </td>
-                <td
-                  style={{
-                    color: "#000",
-                    fontWeight: "500",
-                    fontSize: "1rem",
-                  }}
-                >
-                  {item.amount}
-                </td>
-                <td
-                  style={{
-                    color: "#000",
-                    fontWeight: "500",
-                    fontSize: "1rem",
-                  }}
-                >
-                  {item.change}
-                </td>
-              </tr>
-            ))}
-          </tbody>
+          {finHead.map((head, idx) => {
+            if (head.HeadName === "Operating Revenue") {
+              const variationIndex = finHead.findIndex(
+                (item, index) => index > idx && item.HeadName === "Variation"
+              );
+              const variation =
+                variationIndex !== -1 ? finHead[variationIndex] : null;
+              return (
+                <tbody key={idx}>
+                  <tr>
+                    <td
+                      style={{
+                        color: "#000",
+                        fontWeight: "500",
+                        fontSize: "1rem",
+                      }}
+                    >
+                      {financialSummary["@Year1"]}
+                    </td>
+                    <td
+                      style={{
+                        color: "#000",
+                        fontWeight: "500",
+                        fontSize: "1rem",
+                      }}
+                    >
+                      {head.Year1}
+                    </td>
+                    <td
+                      style={{
+                        color: "#000",
+                        fontWeight: "500",
+                        fontSize: "1rem",
+                      }}
+                    >
+                      {variation?.Year1}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      style={{
+                        color: "#000",
+                        fontWeight: "500",
+                        fontSize: "1rem",
+                      }}
+                    >
+                      {financialSummary["@Year2"]}
+                    </td>
+                    <td
+                      style={{
+                        color: "#000",
+                        fontWeight: "500",
+                        fontSize: "1rem",
+                      }}
+                    >
+                      {head.Year2}
+                    </td>
+                    <td
+                      style={{
+                        color: "#000",
+                        fontWeight: "500",
+                        fontSize: "1rem",
+                      }}
+                    >
+                      {variation?.Year2}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      style={{
+                        color: "#000",
+                        fontWeight: "500",
+                        fontSize: "1rem",
+                      }}
+                    >
+                      {financialSummary["@Year3"]}
+                    </td>
+                    <td
+                      style={{
+                        color: "#000",
+                        fontWeight: "500",
+                        fontSize: "1rem",
+                      }}
+                    >
+                      {head.Year3}
+                    </td>
+                    <td
+                      style={{
+                        color: "#000",
+                        fontWeight: "500",
+                        fontSize: "1rem",
+                      }}
+                    >
+                      {variation?.Year3 ? variation.Year3 : "---"}
+                    </td>
+                  </tr>
+                </tbody>
+              );
+            }
+            return null; // Render nothing if HeadName is not "Net Worth"
+          })}
         </Table>
       </div>
       <div>
@@ -204,39 +364,107 @@ const FinancialSummary = () => {
               </th>
             </tr>
           </thead>
-          <tbody>
-            {FinancialData.map((item, idx) => (
-              <tr key={idx}>
-                <td
-                  style={{
-                    color: "#000",
-                    fontWeight: "500",
-                    fontSize: "1rem",
-                  }}
-                >
-                  {item.years}
-                </td>
-                <td
-                  style={{
-                    color: "#000",
-                    fontWeight: "500",
-                    fontSize: "1rem",
-                  }}
-                >
-                  {item.amount}
-                </td>
-                <td
-                  style={{
-                    color: "#000",
-                    fontWeight: "500",
-                    fontSize: "1rem",
-                  }}
-                >
-                  {item.change}
-                </td>
-              </tr>
-            ))}
-          </tbody>
+          {finHead.map((head, idx) => {
+            if (head.HeadName === "Profit Before Tax") {
+              const variationIndex = finHead.findIndex(
+                (item, index) => index > idx && item.HeadName === "Variation"
+              );
+              const variation =
+                variationIndex !== -1 ? finHead[variationIndex] : null;
+              return (
+                <tbody key={idx}>
+                  <tr>
+                    <td
+                      style={{
+                        color: "#000",
+                        fontWeight: "500",
+                        fontSize: "1rem",
+                      }}
+                    >
+                      {financialSummary["@Year1"]}
+                    </td>
+                    <td
+                      style={{
+                        color: "#000",
+                        fontWeight: "500",
+                        fontSize: "1rem",
+                      }}
+                    >
+                      {head.Year1}
+                    </td>
+                    <td
+                      style={{
+                        color: "#000",
+                        fontWeight: "500",
+                        fontSize: "1rem",
+                      }}
+                    >
+                      {variation?.Year1}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      style={{
+                        color: "#000",
+                        fontWeight: "500",
+                        fontSize: "1rem",
+                      }}
+                    >
+                      {financialSummary["@Year2"]}
+                    </td>
+                    <td
+                      style={{
+                        color: "#000",
+                        fontWeight: "500",
+                        fontSize: "1rem",
+                      }}
+                    >
+                      {head.Year2}
+                    </td>
+                    <td
+                      style={{
+                        color: "#000",
+                        fontWeight: "500",
+                        fontSize: "1rem",
+                      }}
+                    >
+                      {variation?.Year2}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      style={{
+                        color: "#000",
+                        fontWeight: "500",
+                        fontSize: "1rem",
+                      }}
+                    >
+                      {financialSummary["@Year3"]}
+                    </td>
+                    <td
+                      style={{
+                        color: "#000",
+                        fontWeight: "500",
+                        fontSize: "1rem",
+                      }}
+                    >
+                      {head.Year3}
+                    </td>
+                    <td
+                      style={{
+                        color: "#000",
+                        fontWeight: "500",
+                        fontSize: "1rem",
+                      }}
+                    >
+                      {variation?.Year3 ? variation.Year3 : "---"}
+                    </td>
+                  </tr>
+                </tbody>
+              );
+            }
+            return null; // Render nothing if HeadName is not "Net Worth"
+          })}
         </Table>
       </div>
       <div>
@@ -283,39 +511,107 @@ const FinancialSummary = () => {
               </th>
             </tr>
           </thead>
-          <tbody>
-            {FinancialData.map((item, idx) => (
-              <tr key={idx}>
-                <td
-                  style={{
-                    color: "#000",
-                    fontWeight: "500",
-                    fontSize: "1rem",
-                  }}
-                >
-                  {item.years}
-                </td>
-                <td
-                  style={{
-                    color: "#000",
-                    fontWeight: "500",
-                    fontSize: "1rem",
-                  }}
-                >
-                  {item.amount}
-                </td>
-                <td
-                  style={{
-                    color: "#000",
-                    fontWeight: "500",
-                    fontSize: "1rem",
-                  }}
-                >
-                  {item.change}
-                </td>
-              </tr>
-            ))}
-          </tbody>
+          {finHead.map((head, idx) => {
+            if (head.HeadName === "Profit After Tax") {
+              const variationIndex = finHead.findIndex(
+                (item, index) => index > idx && item.HeadName === "Variation"
+              );
+              const variation =
+                variationIndex !== -1 ? finHead[variationIndex] : null;
+              return (
+                <tbody key={idx}>
+                  <tr>
+                    <td
+                      style={{
+                        color: "#000",
+                        fontWeight: "500",
+                        fontSize: "1rem",
+                      }}
+                    >
+                      {financialSummary["@Year1"]}
+                    </td>
+                    <td
+                      style={{
+                        color: "#000",
+                        fontWeight: "500",
+                        fontSize: "1rem",
+                      }}
+                    >
+                      {head.Year1}
+                    </td>
+                    <td
+                      style={{
+                        color: "#000",
+                        fontWeight: "500",
+                        fontSize: "1rem",
+                      }}
+                    >
+                      {variation?.Year1}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      style={{
+                        color: "#000",
+                        fontWeight: "500",
+                        fontSize: "1rem",
+                      }}
+                    >
+                      {financialSummary["@Year2"]}
+                    </td>
+                    <td
+                      style={{
+                        color: "#000",
+                        fontWeight: "500",
+                        fontSize: "1rem",
+                      }}
+                    >
+                      {head.Year2}
+                    </td>
+                    <td
+                      style={{
+                        color: "#000",
+                        fontWeight: "500",
+                        fontSize: "1rem",
+                      }}
+                    >
+                      {variation?.Year2}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      style={{
+                        color: "#000",
+                        fontWeight: "500",
+                        fontSize: "1rem",
+                      }}
+                    >
+                      {financialSummary["@Year3"]}
+                    </td>
+                    <td
+                      style={{
+                        color: "#000",
+                        fontWeight: "500",
+                        fontSize: "1rem",
+                      }}
+                    >
+                      {head.Year3}
+                    </td>
+                    <td
+                      style={{
+                        color: "#000",
+                        fontWeight: "500",
+                        fontSize: "1rem",
+                      }}
+                    >
+                      {variation?.Year3 ? variation.Year3 : "---"}
+                    </td>
+                  </tr>
+                </tbody>
+              );
+            }
+            return null; // Render nothing if HeadName is not "Net Worth"
+          })}
         </Table>
       </div>
     </div>
