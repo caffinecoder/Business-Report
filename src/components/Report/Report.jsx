@@ -1,8 +1,8 @@
 import React from "react";
-import Content from "./Content/Content";
+import Content from "./Content/Index";
 const Report = () => {
   return (
-    <div>
+    <div className="report-container">
       <div className="fixed top-0 w-full px-2 bg-white text-center z-50">
         <header className="header">
           <div className="container">

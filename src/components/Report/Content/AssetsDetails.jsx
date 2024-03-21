@@ -37,7 +37,7 @@ const AssetsDetails = () => {
             >
               For the Year Ending
             </th>
-            <th
+            <th colSpan={4}
               style={{
                 color: "#000",
                 fontWeight: "600",
@@ -45,24 +45,6 @@ const AssetsDetails = () => {
               }}
             >
               {assetsDetails["@AsOn"]}
-            </th>
-            <th
-              style={{
-                color: "#000",
-                fontWeight: "600",
-                fontSize: "1rem",
-              }}
-            >
-              {assetsDetails["@Year2"]}
-            </th>
-            <th
-              style={{
-                color: "#000",
-                fontWeight: "600",
-                fontSize: "1rem",
-              }}
-            >
-              {assetsDetails["@Year3"]}
             </th>
           </tr>
         </thead>
@@ -72,15 +54,14 @@ const AssetsDetails = () => {
               <tr>
                 <td
                   style={{
-                    fontWeight: Asset === "TOTAL" ? 600 : "normal",
+                    fontWeight: Asset === "TOTAL" ? 600 : 500,
                     color: "#000",
-                    fontWeight: "500",
                     fontSize: "1rem",
                   }}
                 >
                   {Asset}
                 </td>
-                <td
+                <td colSpan={4}
                   style={{
                     color: "#000",
                     fontWeight: "500",
@@ -89,20 +70,6 @@ const AssetsDetails = () => {
                 >
                   {assetsDetails.AssetValue[idx]}
                 </td>
-                <td
-                  style={{
-                    color: "#000",
-                    fontWeight: "500",
-                    fontSize: "1rem",
-                  }}
-                ></td>
-                <td
-                  style={{
-                    color: "#000",
-                    fontWeight: "500",
-                    fontSize: "1rem",
-                  }}
-                ></td>
               </tr>
             </React.Fragment>
           ))}

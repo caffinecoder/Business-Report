@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import { Table } from "@mui/joy";
-import { EfficiecyRatioData, ProfitabilityRatioData } from "./TableData";
 import { DataContext } from "../../context/DataProvider";
 const KeyRatio = () => {
   const { data, loading, error } = useContext(DataContext);
@@ -14,9 +13,6 @@ const KeyRatio = () => {
   }
   const keyratioinfo = data?.orderResult?.UCS?.FinancialStatement?.KeyRatios;
 
-  const showContent = {
-    
-  }
 
   return (
     <div className=" overflow-hidden border  mt-5">

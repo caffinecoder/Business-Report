@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import { Table } from "@mui/joy";
-import { BorrowingData } from "./TableData";
 import { DataContext } from "../../context/DataProvider";
 const Borrowings = () => {
   const { data, loading, error } = useContext(DataContext);

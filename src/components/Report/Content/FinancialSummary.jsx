@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import Table from "@mui/joy/Table";
-import { FinancialData } from "./TableData";
 import { DataContext } from "../../context/DataProvider";
 const FinancialSummary = () => {
   const { data, loading, error } = useContext(DataContext);

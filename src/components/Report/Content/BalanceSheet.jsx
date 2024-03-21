@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import Table from "@mui/joy/Table";
-import { BalanceData } from "./TableData";
 import { DataContext } from "../../context/DataProvider";
 
 const BalanceSheet = () => {

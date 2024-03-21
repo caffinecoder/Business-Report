@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import Table from "@mui/joy/Table";
-import { ProfitLossData } from "./TableData";
 import { DataContext } from "../../context/DataProvider";
 const ProfitLoss = () => {
   const { data, loading, error } = useContext(DataContext);
@@ -78,7 +77,7 @@ const ProfitLoss = () => {
                 <th
                   style={{
                     color: "#000",
-                    fontWeight: "600",
+                    fontWeight: Head["@value"] === "Exceptional items" ? 500 : 600,
                     fontSize: "1rem",
                   }}
                 >

@@ -18,6 +18,8 @@ import CurrentLiabilities from "./CurrentLiabilities";
 import AssetsDetails from "./AssetsDetails";
 import KeyRatio from "./KeyRatio";
 import ConsolidateBalance from "./ConsolidateBalance";
+import ConsolidateProfitLoss from "./ConsolidateProfitLoss";
+import LinkedCompanies from "./LinkedCompanies";
 const Content = () => {
   return (
     <div>
@@ -449,7 +451,24 @@ const Content = () => {
             <CurrentLiabilities />
             <AssetsDetails />
             <KeyRatio />
-            <ConsolidateBalance/>
+            <ConsolidateBalance />
+            <ConsolidateProfitLoss />
+            <LinkedCompanies />
+          </div>
+          <div className="mt-5">
+            <p className="text-base italic">
+              This report is based on information from sources believed to be
+              true. Any advice or recommendation in this report has been given
+              without specific investment objectives and the particular needs of
+              any specific addressee. It must be distinctly understood that
+              though utmost care has been exercised to obtain reports of a
+              reliable character but we accept no liability whatsoever for any
+              direct or consequential loss arising from any use of this
+              document.
+            </p>
+            <span className="block text-center text-2xl font-semibold mt-5">
+              ***END OF REPORT***
+            </span>
           </div>
         </div>
       </section>
