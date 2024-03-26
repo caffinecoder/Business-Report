@@ -85,17 +85,3 @@ th {
   border-color: #333 !important;
   border-bottom: 1px solid #333;
 }
-.report-container {
-  @media print {
-    page-break-inside: avoid;
-    page-break-before: auto;
-    page-break-after: auto;
-    margin: 20mm; /* Adjust margins as needed */
-    padding: 10mm; /* Adjust padding as needed */
-  }
-}
-
-/* Example of avoiding page break inside specific elements */
-.avoid-page-break {
-  page-break-inside: avoid;
-}

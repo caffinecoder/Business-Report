@@ -13,19 +13,20 @@ const ConsolidateBalance = () => {
   }
 
   const consolidate = data?.orderResult?.UCS?.FinancialStatementConsolidated;
-  const conditionalRender = [];
+  const RenderSubHead = [];
+  const RenderHead = [];
   if (consolidate) {
     consolidate.BSNewDataConsolidated.MainHead.forEach((MainHeadItem) => {
       MainHeadItem.Head.forEach((HeadItem) => {
+        RenderHead.push(HeadItem);
         if (HeadItem.SubHead) {
           HeadItem.SubHead.forEach((SubHeadItem) => {
-            conditionalRender.push(SubHeadItem);
+            RenderSubHead.push(SubHeadItem);
           });
         }
       });
     });
   }
-
   return (
     <div className=" overflow-hidden border  mt-5">
       <div className="bg-[#1a3d73] py-2 px-2">
@@ -71,7 +72,7 @@ const ConsolidateBalance = () => {
             >
               {consolidate.BSNewDataConsolidated["@Year2"]}
             </th>
-            {conditionalRender.some(
+            {RenderSubHead.some(
               (item) => item.Year3 !== "0.00" || item.Year3 === ""
             ) && (
               <th
@@ -85,166 +86,178 @@ const ConsolidateBalance = () => {
               </th>
             )}
           </tr>
-          <tr>
-            <td
-              style={{
-                color: "#000",
-                fontWeight: "500",
-                fontSize: "1rem",
-              }}
-            >
-              Period
-            </td>
-            <td
-              style={{
-                color: "#000",
-                fontWeight: "500",
-                fontSize: "1rem",
-              }}
-            >
-              {consolidate["PeriodYear1"]}
-            </td>
-            <td
-              style={{
-                color: "#000",
-                fontWeight: "500",
-                fontSize: "1rem",
-              }}
-            >
-              {consolidate["PeriodYear2"]}
-            </td>
-            {conditionalRender.some(
-              (item) => item.Year3 !== "0.00" || item.Year3 === ""
-            ) && (
-              <td
-                style={{
-                  color: "#000",
-                  fontWeight: "500",
-                  fontSize: "1rem",
-                }}
-              ></td>
+          {consolidate.PeriodYear1 !== "0.00" &&
+            consolidate.PeriodYear1 !== "" && (
+              <tr>
+                <td
+                  style={{
+                    color: "#000",
+                    fontWeight: "500",
+                    fontSize: "1rem",
+                  }}
+                >
+                  Period
+                </td>
+                <td
+                  style={{
+                    color: "#000",
+                    fontWeight: "500",
+                    fontSize: "1rem",
+                  }}
+                >
+                  {consolidate["PeriodYear1"]}
+                </td>
+                <td
+                  style={{
+                    color: "#000",
+                    fontWeight: "500",
+                    fontSize: "1rem",
+                  }}
+                >
+                  {consolidate["PeriodYear2"]}
+                </td>
+                {RenderSubHead.some(
+                  (item) => item.Year3 !== "0.00" || item.Year3 === ""
+                ) && (
+                  <td
+                    style={{
+                      color: "#000",
+                      fontWeight: "500",
+                      fontSize: "1rem",
+                    }}
+                  ></td>
+                )}
+              </tr>
             )}
-          </tr>
-          <tr>
-            <td
-              style={{
-                color: "#000",
-                fontWeight: "500",
-                fontSize: "1rem",
-              }}
-            >
-              Type Of Financial
-            </td>
-            <td
-              style={{
-                color: "#000",
-                fontWeight: "500",
-                fontSize: "1rem",
-              }}
-            >
-              {consolidate["TypeOfFinancial"]}
-            </td>
-            <td
-              style={{
-                color: "#000",
-                fontWeight: "500",
-                fontSize: "1rem",
-              }}
-            >
-              {consolidate["TypeOfFinancial"]}
-            </td>
-            {conditionalRender.some(
-              (item) => item.Year3 !== "0.00" || item.Year3 === ""
-            ) && (
-              <td
-                style={{
-                  color: "#000",
-                  fontWeight: "500",
-                  fontSize: "1rem",
-                }}
-              ></td>
+          {consolidate.PeriodYear1 !== "0.00" &&
+            consolidate.PeriodYear1 !== "" && (
+              <tr>
+                <td
+                  style={{
+                    color: "#000",
+                    fontWeight: "500",
+                    fontSize: "1rem",
+                  }}
+                >
+                  Type Of Financial
+                </td>
+                <td
+                  style={{
+                    color: "#000",
+                    fontWeight: "500",
+                    fontSize: "1rem",
+                  }}
+                >
+                  {consolidate["TypeOfFinancial"]}
+                </td>
+                <td
+                  style={{
+                    color: "#000",
+                    fontWeight: "500",
+                    fontSize: "1rem",
+                  }}
+                >
+                  {consolidate["TypeOfFinancial"]}
+                </td>
+                {RenderSubHead.some(
+                  (item) => item.Year3 !== "0.00" || item.Year3 === ""
+                ) && (
+                  <td
+                    style={{
+                      color: "#000",
+                      fontWeight: "500",
+                      fontSize: "1rem",
+                    }}
+                  ></td>
+                )}
+              </tr>
             )}
-          </tr>
-          <tr>
-            <td
-              style={{
-                color: "#000",
-                fontWeight: "500",
-                fontSize: "1rem",
-              }}
-            >
-              Account Type
-            </td>
-            <td
-              style={{
-                color: "#000",
-                fontWeight: "500",
-                fontSize: "1rem",
-              }}
-            >
-              {consolidate["AccountTypeYear1"]}
-            </td>
-            <td
-              style={{
-                color: "#000",
-                fontWeight: "500",
-                fontSize: "1rem",
-              }}
-            >
-              {consolidate["AccountTypeYear2"]}
-            </td>
-            {conditionalRender.some(
-              (item) => item.Year3 !== "0.00" || item.Year3 === ""
-            ) && (
-              <td
-                style={{
-                  color: "#000",
-                  fontWeight: "500",
-                  fontSize: "1rem",
-                }}
-              ></td>
+          {consolidate.PeriodYear1 !== "0.00" &&
+            consolidate.PeriodYear1 !== "" && (
+              <tr>
+                <td
+                  style={{
+                    color: "#000",
+                    fontWeight: "500",
+                    fontSize: "1rem",
+                  }}
+                >
+                  Account Type
+                </td>
+                <td
+                  style={{
+                    color: "#000",
+                    fontWeight: "500",
+                    fontSize: "1rem",
+                  }}
+                >
+                  {consolidate["AccountTypeYear1"]}
+                </td>
+                <td
+                  style={{
+                    color: "#000",
+                    fontWeight: "500",
+                    fontSize: "1rem",
+                  }}
+                >
+                  {consolidate["AccountTypeYear2"]}
+                </td>
+                {RenderSubHead.some(
+                  (item) => item.Year3 !== "0.00" || item.Year3 === ""
+                ) && (
+                  <td
+                    style={{
+                      color: "#000",
+                      fontWeight: "500",
+                      fontSize: "1rem",
+                    }}
+                  ></td>
+                )}
+              </tr>
             )}
-          </tr>
-          <tr>
-            <td
-              style={{
-                color: "#000",
-                fontWeight: "500",
-                fontSize: "1rem",
-              }}
-            >
-              Source
-            </td>
-            <td
-              style={{
-                color: "#000",
-                fontWeight: "500",
-                fontSize: "1rem",
-              }}
-            >
-              {consolidate["SourceYear1"]}
-            </td>
-            <td
-              style={{
-                color: "#000",
-                fontWeight: "500",
-                fontSize: "1rem",
-              }}
-            >
-              {consolidate["SourceYear2"]}
-            </td>
-            {conditionalRender.some(
-              (item) => item.Year3 !== "0.00" || item.Year3 === ""
-            ) && (
-              <td
-                style={{
-                  color: "#000",
-                  fontWeight: "500",
-                  fontSize: "1rem",
-                }}
-              ></td>
+          {consolidate.PeriodYear1 !== "0.00" &&
+            consolidate.PeriodYear1 !== "" && (
+              <tr>
+                <td
+                  style={{
+                    color: "#000",
+                    fontWeight: "500",
+                    fontSize: "1rem",
+                  }}
+                >
+                  Source
+                </td>
+                <td
+                  style={{
+                    color: "#000",
+                    fontWeight: "500",
+                    fontSize: "1rem",
+                  }}
+                >
+                  {consolidate["SourceYear1"]}
+                </td>
+                <td
+                  style={{
+                    color: "#000",
+                    fontWeight: "500",
+                    fontSize: "1rem",
+                  }}
+                >
+                  {consolidate["SourceYear2"]}
+                </td>
+                {RenderSubHead.some(
+                  (item) => item.Year3 !== "0.00" || item.Year3 === ""
+                ) && (
+                  <td
+                    style={{
+                      color: "#000",
+                      fontWeight: "500",
+                      fontSize: "1rem",
+                    }}
+                  ></td>
+                )}
+              </tr>
             )}
-          </tr>
         </thead>
         <tbody>
           {consolidate.BSNewDataConsolidated.MainHead.map((MainHead, idx) =>
@@ -278,7 +291,7 @@ const ConsolidateBalance = () => {
                   >
                     {Head["@Year2"]}
                   </th>
-                  {conditionalRender.some(
+                  {RenderSubHead.some(
                     (item) => item.Year3 !== "0.00" || item.Year3 === ""
                   ) && (
                     <th
@@ -293,50 +306,54 @@ const ConsolidateBalance = () => {
                   )}
                 </tr>
                 {Head.SubHead &&
-                  Head.SubHead.map((SubHead, subIdx) => (
-                    <tr key={subIdx}>
-                      <td
-                        style={{
-                          color: "#000",
-                          fontWeight: "500",
-                          fontSize: "1rem",
-                        }}
-                      >
-                        {SubHead["@Name"]}
-                      </td>
-                      <td
-                        style={{
-                          color: "#000",
-                          fontWeight: "500",
-                          fontSize: "1rem",
-                        }}
-                      >
-                        {SubHead.Year1}
-                      </td>
-                      <td
-                        style={{
-                          color: "#000",
-                          fontWeight: "500",
-                          fontSize: "1rem",
-                        }}
-                      >
-                        {SubHead.Year2}
-                      </td>
-                      {conditionalRender.some(
-                        (item) => item.Year3 !== "0.00" || item.Year3 === ""
-                      ) && (
-                        <td
-                          style={{
-                            color: "#000",
-                            fontWeight: "500",
-                            fontSize: "1rem",
-                          }}
-                        >
-                          {SubHead.Year3}
-                        </td>
-                      )}
-                    </tr>
-                  ))}
+                  Head.SubHead.map(
+                    (SubHead, subIdx) =>
+                      SubHead.Year1 !== "" &&
+                      SubHead.Year2 !== "" && (
+                        <tr key={subIdx}>
+                          <td
+                            style={{
+                              color: "#000",
+                              fontWeight: "500",
+                              fontSize: "1rem",
+                            }}
+                          >
+                            {SubHead["@Name"]}
+                          </td>
+                          <td
+                            style={{
+                              color: "#000",
+                              fontWeight: "500",
+                              fontSize: "1rem",
+                            }}
+                          >
+                            {SubHead.Year1}
+                          </td>
+                          <td
+                            style={{
+                              color: "#000",
+                              fontWeight: "500",
+                              fontSize: "1rem",
+                            }}
+                          >
+                            {SubHead.Year2}
+                          </td>
+                          {RenderSubHead.some(
+                            (item) => item.Year3 !== "0.00" || item.Year3 === ""
+                          ) && (
+                            <td
+                              style={{
+                                color: "#000",
+                                fontWeight: "500",
+                                fontSize: "1rem",
+                              }}
+                            >
+                              {SubHead.Year3}
+                            </td>
+                          )}
+                        </tr>
+                      )
+                  )}
               </React.Fragment>
             ))
           )}

@@ -1,7 +1,22 @@
-import React from "react";
+import React, { useContext } from "react";
 import Table from "@mui/joy/Table";
-import { shareHolderInfo } from "./TableData";
+import { DataContext } from "../../context/DataProvider";
 const ShareHolders = () => {
+  const { data, loading, error } = useContext(DataContext);
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div>Error: {error.message}</div>;
+  }
+  const shareHolders = data?.orderResult?.UCS?.ShareHolders?.ShareHolder;
+  const formatKey = (key) => {
+    return key
+      .replace(/([a-z])([A-Z])/g, "$1 $2") // Add space between camel case words
+      .replace(/_/g, " "); // Replace underscores with spaces
+  };
   return (
     <div className=" overflow-hidden border  mt-5">
       <div className="bg-[#1a3d73] py-2 px-2">
@@ -16,125 +31,58 @@ const ShareHolders = () => {
       <Table borderAxis="both">
         <thead>
           <tr>
-            <th
-              style={{
-                color: "#000",
-                fontWeight: "600",
-                fontSize: "1rem",
-              }}
-            >
-              Name
-            </th>
-            <th
-              style={{
-                color: "#000",
-                fontWeight: "600",
-                fontSize: "1rem",
-              }}
-            >
-              Nationality/Country of Origin
-            </th>
-            <th
-              style={{
-                color: "#000",
-                fontWeight: "600",
-                fontSize: "1rem",
-              }}
-            >
-              No. of Shares
-            </th>
-            <th
-              style={{
-                color: "#000",
-                fontWeight: "600",
-                fontSize: "1rem",
-              }}
-            >
-              Holding(%)
-            </th>
+            {Object.entries(shareHolders[0]).map(
+              ([key, value]) =>
+                key &&
+                value && (
+                  <React.Fragment key={key}>
+                    <th
+                      style={{
+                        color: "#000",
+                        fontWeight: "600",
+                        fontSize: "1rem",
+                      }}
+                    >
+                      {formatKey(key)}
+                    </th>
+                  </React.Fragment>
+                )
+            )}
           </tr>
         </thead>
         <tbody>
-          {shareHolderInfo.map((item, idx) => (
+          {shareHolders.map((item, idx) => (
             <tr key={idx}>
               <td
                 style={{
                   color: "#000",
-                  fontWeight: "500",
+                  fontWeight: item.Name === "TOTAL" ? 600 : 500,
                   fontSize: "1rem",
                 }}
               >
-                {item.label}
+                {item.Name}
               </td>
               <td
                 style={{
                   color: "#000",
-                  fontWeight: "500",
+                  fontWeight: item.Name === "TOTAL" ? 600 : 500,
                   fontSize: "1rem",
                 }}
               >
-                {item.country}
+                {item.NoOfShares}
               </td>
               <td
                 style={{
                   color: "#000",
-                  fontWeight: "500",
+                  fontWeight: item.Name === "TOTAL" ? 600 : 500,
                   fontSize: "1rem",
                 }}
               >
-                {item.shares}
-              </td>
-              <td
-                style={{
-                  color: "#000",
-                  fontWeight: "500",
-                  fontSize: "1rem",
-                }}
-              >
-                {item.holding}
+                {item.PercentageHolding}
               </td>
             </tr>
           ))}
         </tbody>
-        <tfoot>
-          <tr>
-            <th
-              scope="row"
-              style={{
-                color: "#000",
-                fontWeight: "600",
-                fontSize: "1rem",
-              }}
-            >
-              Totals
-            </th>
-            <td
-              style={{
-                color: "#000",
-                fontWeight: "600",
-                fontSize: "1rem",
-              }}
-            ></td>
-            <td
-              style={{
-                color: "#000",
-                fontWeight: "600",
-                fontSize: "1rem",
-              }}
-            >
-              50.7
-            </td>
-            <td
-              style={{
-                color: "#000",
-                fontWeight: "600",
-                fontSize: "1rem",
-              }}
-            >
-              201
-            </td>
-          </tr>
-        </tfoot>
       </Table>
     </div>
   );

@@ -20,6 +20,7 @@ import KeyRatio from "./KeyRatio";
 import ConsolidateBalance from "./ConsolidateBalance";
 import ConsolidateProfitLoss from "./ConsolidateProfitLoss";
 import LinkedCompanies from "./LinkedCompanies";
+import CreditRecommendation from "./CreditRecommendation";
 const Content = () => {
   return (
     <div>
@@ -436,6 +437,7 @@ const Content = () => {
             <BasicDetails />
             <ContactDetails />
             <ExecutiveSummary />
+            <CreditRecommendation/>
             <CapitalStructure />
             <ShareHolders />
             <Directors />

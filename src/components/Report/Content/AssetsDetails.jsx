@@ -37,7 +37,7 @@ const AssetsDetails = () => {
             >
               For the Year Ending
             </th>
-            <th colSpan={4}
+            <th 
               style={{
                 color: "#000",
                 fontWeight: "600",
@@ -61,7 +61,7 @@ const AssetsDetails = () => {
                 >
                   {Asset}
                 </td>
-                <td colSpan={4}
+                <td 
                   style={{
                     color: "#000",
                     fontWeight: "500",
