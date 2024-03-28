@@ -1,6 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
 import Table from "@mui/joy/Table";
+import { DataContext } from "../../context/DataProvider";
 const BusinessOperations = () => {
+  const { data, loading, error } = useContext(DataContext);
+  if (loading) {
+    return <div>loading....</div>;
+  }
+  if (error) {
+    return <div>Error: {error.message}</div>;
+  }
+  const businessOperation = data?.orderResult?.UCS;
+  const formatKey = (key) => {
+    return key
+      .replace(/([a-z])([A-Z])/g, "$1 $2") // Add space between camel case words
+      .replace(/_/g, " "); // Replace underscores with spaces
+  };
   return (
     <div className=" overflow-hidden border  mt-5">
       <div className="bg-[#1a3d73] py-2 px-2">
@@ -16,25 +30,102 @@ const BusinessOperations = () => {
         }}
       >
         <tbody>
-          <td style={{border: '1px solid #333'}}>
-            <p>
-              Hindustan Aeronautics Limited (HAL), was incorporated in 1963 by
-              amalgamation of Hindustan Aircraft Limited and Aeronautics India
-              Limited, is a Navratana Company. Government of India (GoI) holds
-              majority stake of 89.97% following listing of shares on March 28,
-              2018. HAL is into carrying out design, development, manufacture,
-              repair and overhaul of aircraft, helicopter, engines and related
-              systems like avionics, instruments and accessories primarily
-              serving Indian defence programme. It also manufactures the
-              structural parts of various Satellite Launch Vehicles of the
-              Indian Space Research Organization (ISRO).HAL is into carrying out
-              design, development, manufacture, repair and overhaul of aircraft,
-              helicopter, engines and related systems like avionics, instruments
-              and accessories primarily serving Indian defence programme. It
-              also manufactures the structural parts of various Satellite Launch
-              Vehicles of the Indian Space Research Organization (ISRO).
-            </p>
-          </td>
+          <tr>
+            <td style={{ border: "1px solid #333" }} colSpan={2}>
+              <p className="text-base">
+                {businessOperation.Operations.split("\n").map((line, idx) => (
+                  <React.Fragment key={idx}>
+                    {line}
+                    <br />
+                  </React.Fragment>
+                ))}
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <th
+              style={{
+                color: "#000",
+                fontWeight: "600",
+                fontSize: "1rem",
+              }}
+            >
+              Listing on Stock
+            </th>
+            <td
+              style={{
+                color: "#000",
+                fontWeight: "500",
+                fontSize: "1rem",
+              }}
+            >
+              {businessOperation.StockListing.Listed}
+            </td>
+          </tr>
+          <tr>
+            <th
+              style={{
+                color: "#000",
+                fontWeight: "600",
+                fontSize: "1rem",
+              }}
+            >
+              Exchange Listed at
+            </th>
+            <td
+              style={{
+                color: "#000",
+                fontWeight: "500",
+                fontSize: "1rem",
+              }}
+            >
+              {businessOperation.StockListing.Exchange}
+            </td>
+          </tr>
+          {Object.entries(businessOperation.ShareTradeDetails).map(
+            ([key, value]) => (
+              <tr key={key}>
+                <th
+                  style={{
+                    color: "#000",
+                    fontWeight: "600",
+                    fontSize: "1rem",
+                  }}
+                >
+                  {formatKey(key)}
+                </th>
+                <td
+                  style={{
+                    color: "#000",
+                    fontWeight: "500",
+                    fontSize: "1rem",
+                  }}
+                >
+                  {value}
+                </td>
+              </tr>
+            )
+          )}
+          <tr>
+            <th
+              style={{
+                color: "#000",
+                fontWeight: "600",
+                fontSize: "1rem",
+              }}
+            >
+              Litigation
+            </th>
+            <td
+              style={{
+                color: "#000",
+                fontWeight: "500",
+                fontSize: "1rem",
+              }}
+            >
+              {businessOperation.LegalActions.LitigationComments}
+            </td>
+          </tr>
         </tbody>
       </Table>
     </div>

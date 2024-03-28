@@ -23,6 +23,8 @@ import LinkedCompanies from "./LinkedCompanies";
 import CreditRecommendation from "./CreditRecommendation";
 import OperationActivities from "./OperationActivities";
 import { Button } from "@mui/material";
+import NegativeSearch from "./NegativeSearch";
+import Location from "./Location";
 const Content = () => {
   return (
     <div>
@@ -446,10 +448,12 @@ const Content = () => {
             <CreditRecommendation />
             <CapitalStructure />
             <ShareHolders />
-            <OperationActivities />
             <Directors />
             <KeyPersonnel />
             <BusinessOperations />
+            <NegativeSearch />
+            <Location/>
+            <OperationActivities />
             <Banker />
             <Hypothecation />
             <Auditor />
