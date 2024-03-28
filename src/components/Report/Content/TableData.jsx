@@ -44,10 +44,10 @@ export const executivSummaryInfo = [
 
 const capitalStructure = (label, labelData) => ({ label, labelData });
 export const capitalInfoLeft = [
-  capitalStructure("Authorised Capital", "INR 6,000,000,000.00"),
+  capitalStructure("Authorised Capital", "6,000,000,000.00"),
 ];
 export const capitalInfoRight = [
-  capitalStructure("Paid up Capital", "INR 3,343,875,000.00"),
+  capitalStructure("Paid up Capital", "3,343,875,000.00"),
 ];
 
 const shareHolders = (label, country, shares, holding) => ({
@@ -494,23 +494,103 @@ const ConsolidatedBalSheet = (label, year2023, year2022, year2021) => {
 };
 export const ConsolidatedBalData = [
   ConsolidatedBalSheet("Period", "3343900.00", "3343900.00", "3343900.00"),
-  ConsolidatedBalSheet("Type Of Financial", "3343900.00", "3343900.00", "3343900.00"),
-  ConsolidatedBalSheet("Account Type", "3343900.00", "3343900.00", "3343900.00"),
+  ConsolidatedBalSheet(
+    "Type Of Financial",
+    "3343900.00",
+    "3343900.00",
+    "3343900.00"
+  ),
+  ConsolidatedBalSheet(
+    "Account Type",
+    "3343900.00",
+    "3343900.00",
+    "3343900.00"
+  ),
   ConsolidatedBalSheet("Source", "3343900.00", "3343900.00", "3343900.00"),
-  ConsolidatedBalSheet("Shareholders' Funds", "3343900.00", "3343900.00", "3343900.00"),
-  ConsolidatedBalSheet("Share Capital", "3343900.00", "3343900.00", "3343900.00"),
-  ConsolidatedBalSheet("Other Equity", "3343900.00", "3343900.00", "3343900.00"),
-  ConsolidatedBalSheet("Non-controlling interest", "3343900.00", "3343900.00", "3343900.00"),
-  ConsolidatedBalSheet("Non-current liabilities", "3343900.00", "3343900.00", "3343900.00"),
-  ConsolidatedBalSheet("Other Financial Liabilities", "3343900.00", "3343900.00", "3343900.00"),
-  ConsolidatedBalSheet("Long-term provisions", "3343900.00", "3343900.00", "3343900.00"),
-  ConsolidatedBalSheet("PeriOther Long term liabilitiesod", "3343900.00", "3343900.00", "3343900.00"),
-  ConsolidatedBalSheet("Current liabilities", "3343900.00", "3343900.00", "3343900.00"),
-  ConsolidatedBalSheet("Trade payables", "3343900.00", "3343900.00", "3343900.00"),
-  ConsolidatedBalSheet("Other Financial Liabilities", "3343900.00", "3343900.00", "3343900.00"),
-  ConsolidatedBalSheet("Other current liabilities", "3343900.00", "3343900.00", "3343900.00"),
-  ConsolidatedBalSheet("Short-term provisions", "3343900.00", "3343900.00", "3343900.00"),
-  ConsolidatedBalSheet("Current Tax Liabilities (Net)", "3343900.00", "3343900.00", "3343900.00"),
+  ConsolidatedBalSheet(
+    "Shareholders' Funds",
+    "3343900.00",
+    "3343900.00",
+    "3343900.00"
+  ),
+  ConsolidatedBalSheet(
+    "Share Capital",
+    "3343900.00",
+    "3343900.00",
+    "3343900.00"
+  ),
+  ConsolidatedBalSheet(
+    "Other Equity",
+    "3343900.00",
+    "3343900.00",
+    "3343900.00"
+  ),
+  ConsolidatedBalSheet(
+    "Non-controlling interest",
+    "3343900.00",
+    "3343900.00",
+    "3343900.00"
+  ),
+  ConsolidatedBalSheet(
+    "Non-current liabilities",
+    "3343900.00",
+    "3343900.00",
+    "3343900.00"
+  ),
+  ConsolidatedBalSheet(
+    "Other Financial Liabilities",
+    "3343900.00",
+    "3343900.00",
+    "3343900.00"
+  ),
+  ConsolidatedBalSheet(
+    "Long-term provisions",
+    "3343900.00",
+    "3343900.00",
+    "3343900.00"
+  ),
+  ConsolidatedBalSheet(
+    "PeriOther Long term liabilitiesod",
+    "3343900.00",
+    "3343900.00",
+    "3343900.00"
+  ),
+  ConsolidatedBalSheet(
+    "Current liabilities",
+    "3343900.00",
+    "3343900.00",
+    "3343900.00"
+  ),
+  ConsolidatedBalSheet(
+    "Trade payables",
+    "3343900.00",
+    "3343900.00",
+    "3343900.00"
+  ),
+  ConsolidatedBalSheet(
+    "Other Financial Liabilities",
+    "3343900.00",
+    "3343900.00",
+    "3343900.00"
+  ),
+  ConsolidatedBalSheet(
+    "Other current liabilities",
+    "3343900.00",
+    "3343900.00",
+    "3343900.00"
+  ),
+  ConsolidatedBalSheet(
+    "Short-term provisions",
+    "3343900.00",
+    "3343900.00",
+    "3343900.00"
+  ),
+  ConsolidatedBalSheet(
+    "Current Tax Liabilities (Net)",
+    "3343900.00",
+    "3343900.00",
+    "3343900.00"
+  ),
   ConsolidatedBalSheet("TOTAL", "3343900.00", "3343900.00", "3343900.00"),
   ConsolidatedBalSheet("Period", "3343900.00", "3343900.00", "3343900.00"),
   ConsolidatedBalSheet("Period", "3343900.00", "3343900.00", "3343900.00"),

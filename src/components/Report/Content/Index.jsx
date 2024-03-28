@@ -21,9 +21,15 @@ import ConsolidateBalance from "./ConsolidateBalance";
 import ConsolidateProfitLoss from "./ConsolidateProfitLoss";
 import LinkedCompanies from "./LinkedCompanies";
 import CreditRecommendation from "./CreditRecommendation";
+import OperationActivities from "./OperationActivities";
+import { Button } from "@mui/material";
 const Content = () => {
   return (
     <div>
+      <div className="flex justify-center gap-2 my-2">
+        <Button variant="contained">Standard</Button>
+        <Button variant="contained">Comprehensive</Button>
+      </div>
       <section className="content">
         <div className="container">
           <div id="content">
@@ -437,9 +443,10 @@ const Content = () => {
             <BasicDetails />
             <ContactDetails />
             <ExecutiveSummary />
-            <CreditRecommendation/>
+            <CreditRecommendation />
             <CapitalStructure />
             <ShareHolders />
+            <OperationActivities />
             <Directors />
             <KeyPersonnel />
             <BusinessOperations />
