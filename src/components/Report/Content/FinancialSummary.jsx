@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { BarChart } from "@mui/icons-material";
+import { BarChart } from "@mui/x-charts/BarChart";
 import Table from "@mui/joy/Table";
 import { DataContext } from "../../context/DataProvider";
 const FinancialSummary = () => {
@@ -26,6 +26,17 @@ const FinancialSummary = () => {
       .replace(/([a-z])([A-Z])/g, "$1 $2") // Add space between camel case words
       .replace(/_/g, " "); // Replace underscores with spaces
   };
+  const xAxisData = ["31-Mar-2023", "31-Mar-2022", "31-Mar-2021"];
+  const seriesData = [235061700.0, 192640000.0, 153681800.0];
+
+  const blueColor = "blue";
+
+  const seriesWithColor = [
+    {
+      data: seriesData,
+      color: blueColor,
+    },
+  ];
   return (
     <div className=" overflow-hidden border  mt-5">
       <div className="bg-[#1a3d73] py-2 px-2">
@@ -173,13 +184,13 @@ const FinancialSummary = () => {
           return null; // Render nothing if HeadName is not "Net Worth"
         })}
       </Table>
-      <div>
-      <BarChart
-      xAxis={[{ scaleType: 'band', data: ['group A', 'group B', 'group C'] }]}
-      series={[{ data: [4, 3, 5] }, { data: [1, 6, 3] }, { data: [2, 5, 6] }]}
-      width={500}
-      height={300}
-    />
+      <div className="flex">
+        <BarChart
+          xAxis={[{ scaleType: "band", data: xAxisData }]}
+          series={seriesWithColor}
+          width={310}
+          height={300}
+        />
       </div>
       <div>
         <p className="font-semibold text-lg capitalize py-1 px-2">
